@@ -1,0 +1,15 @@
+
+
+/* Rectangle */
+
+box-sizing: border-box;
+
+position: absolute;
+width: 232px;
+height: 51px;
+left: 0px;
+top: 0px;
+
+background: #FCBA05;
+border: 1px solid #FCBA05;
+border-radius: 35px;
