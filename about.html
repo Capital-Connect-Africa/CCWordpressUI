@@ -1,0 +1,518 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Connect</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="font-inter">
+
+    <div class="w-full bg-white px-[100px] flex flex-row flex-wrap items-start justify-between h-[115px] overflow-hidden">
+        <!-- Logo -->
+        <div class="w-[145px] pt-5 flex flex-col gap-2.5 items-start">
+            <img class="w-full h-[67px] object-cover" src="assets/images/logo_green.png" alt="Logo">
+        </div>
+    
+        <!-- Navigation Menu -->
+        <div class="w-[1215px] h-[114px] px-2.5 py-[29px] flex flex-row gap-2.5 items-start justify-end overflow-hidden">
+            <!-- Home -->
+            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">Home</div>
+            </div>
+    
+            <!-- For Businesses -->
+            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="font-['Poppins']">
+                    <span class="text-[18px] font-normal text-[#FCBA05]">For Businesses</span>
+                    <span class="text-[18px] font-normal text-[#090C10]"></span>
+                </div>
+                <div class="w-[22px] h-[22px] relative origin-top-left rotate-90 overflow-hidden">
+                    <svg class="absolute w-[31.24%] h-[56.17%] left-[51.04%] top-[21.95%]" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
+                    </svg>
+                </div>
+            </div>
+    
+            <!-- For Investors -->
+            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">For Investors</div>
+                <div class="w-[22px] h-[22px] relative origin-top-left rotate-90 overflow-hidden">
+                    <svg class="absolute w-[31.24%] h-[56.17%] left-[51.04%] top-[21.95%]" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
+                    </svg>
+                </div>
+            </div>
+    
+            <!-- Pricing -->
+            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">Pricing</div>
+            </div>
+    
+            <!-- About Us -->
+            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">About Us</div>
+            </div>
+    
+            <!-- Contact Us -->
+            <div class="w-[157px] p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">Contact Us</div>
+            </div>
+    
+            <!-- Sign In Button -->
+            <div class="w-[232px] flex flex-col gap-2.5 items-start">
+                <div class="w-[232px] h-[51px] relative">
+                    <div class="w-full h-full rounded-[35px] border border-[#FCBA05] bg-[#FCBA05] absolute"></div>
+                    <div class="absolute left-[57px] top-[17px] text-[15px] font-medium text-[#FFFDFD] font-['Inter']">Sign In / Sign Up</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-full h-full px-24 py-28 overflow-hidden flex flex-col justify-center items-start gap-10">
+        <div class="w-full text-gray-600 text-xl font-medium leading-tight">
+            Our Story
+        </div>
+        <div class="w-full text-black text-5xl font-medium leading-[1.15]">
+            We're revolutionizing business funding with technology and insight
+        </div>
+    </div>
+
+
+    <div class="w-full h-full px-[100px] overflow-hidden flex flex-col justify-start items-start gap-[10px] inline-flex">
+        <div class="self-stretch h-[949px] bg-white overflow-hidden bg-[url('https://placehold.co/1720x949')] justify-start items-start gap-[10px] inline-flex">
+          <img class="w-[1751px] h-[985px]" src="assets/images/about-us-top.png" />
+        </div>
+      </div>
+
+      
+      <div class="w-full h-full px-[97px] py-[10px] bg-[#F4F8F7] overflow-hidden inline-flex justify-start items-start gap-[10px]">
+        <div class="w-[1823px] h-[618px] py-[120px] overflow-hidden flex justify-start items-start gap-[10px]">
+          
+          <!-- Left Text Box -->
+          <div class="w-[497px] h-[206px] overflow-hidden flex justify-start items-start gap-[10px]">
+            <div class="w-[388px] flex flex-col justify-center text-[#1A1A1A] text-[40px] font-medium leading-[50px] break-words font-[Inter]">
+              Your Growth Partner in the Investment Journey
+            </div>
+          </div>
+      
+          <!-- Right Description Text -->
+          <div class="w-[1137px] h-[298px] overflow-hidden flex justify-start items-start gap-[10px]">
+            <div class="flex-1 flex flex-col justify-center text-[#3A3A38] text-[19px] font-normal leading-[34px] break-words font-[Inter]">
+              At Capital Connect, we are transforming the way businesses secure funding and how investors discover high-potential opportunities.
+              Our tech-driven platform streamlines the investment process, making it easier for businesses to become investor-ready and for
+              investors to find structured, data-backed opportunities.<br /><br /><br />
+              We believe that access to capital shouldn’t be a roadblock to growth. That’s why we provide businesses with expert guidance on
+              structuring financials, preparing key documents, and positioning themselves for investment success. At the same time, we give
+              investors exclusive access to pre-vetted businesses, ensuring informed, confident investment decisions.<br />
+              With a commitment to transparency, efficiency, and innovation, we are bridging the gap between ambitious businesses and strategic
+              investors—fueling growth, one connection at a time.
+            </div>
+          </div>
+      
+        </div>
+      </div>
+      
+
+
+
+
+
+      <div class="w-full h-full pt-20 pb-20 overflow-hidden flex justify-start items-start gap-2.5">
+        <div class="w-[1910px] h-[895px] pt-7.5 pb-7.5 flex justify-start items-start gap-[147px]">
+            <div class="w-[827px] h-[873px] relative bg-white overflow-hidden">
+                <div class="w-[1086px] h-[736px] left-[-417px] top-[69px] absolute bg-white">
+                    <div class="w-[1086px] h-[736px] left-0 top-0 absolute rounded-[21.57px] border-[17.97px] border-black"></div>
+                </div>
+                <img class="w-[727.34px] h-[1051px] left-[-44px] top-[-48px] absolute" src="assets/images/abt-right.png" />
+                <div class="w-[863px] h-[844px] left-0 top-[69px] absolute"></div>
+            </div>
+            <div class="p-2.5 relative flex justify-start items-start gap-2.5">
+                <div class="w-[529px] h-[151px] left-[-44px] top-[185px] absolute flex justify-center flex-col text-[#002E25] text-[40px] font-medium leading-[50px] break-words">
+                    Why We’re the Right Choice for Your Funding Journey
+                </div>
+                <div class="w-[755px] p-2.5 left-[-40px] top-[336px] absolute overflow-hidden flex flex-col justify-start items-start gap-2.5">
+                    <div class="w-[682px] overflow-hidden flex justify-start items-start gap-3.75">
+                        <div class="bg-white overflow-hidden flex justify-start items-center gap-2.5">
+                            <div class="w-[24px] h-[24px] relative overflow-hidden">
+                                <div class="w-[24px] h-[24px] absolute overflow-hidden">
+                                    <div class="w-[14.75px] h-[14.5px] left-[4.75px] top-[4.75px] absolute outline-[1.5px] outline-[#002E25] outline-offset-[-0.75px]"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[615px] overflow-hidden flex justify-center items-center gap-2.5">
+                            <div class="w-[616px] flex justify-center flex-col">
+                                <span class="text-[#002E25] text-[14px] font-bold leading-[23.8px] break-words">Tech-Driven Matching:</span>
+                                <span class="text-[#002E25] text-[14px] font-medium leading-[23.8px] break-words">Smart algorithms help businesses find the right investors.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[682px] pt-[7px] pb-[7px] overflow-hidden flex justify-start items-start gap-3.75">
+                        <div class="bg-white overflow-hidden flex justify-start items-center gap-2.5">
+                            <div class="w-[24px] h-[24px] relative overflow-hidden">
+                                <div class="w-[24px] h-[24px] absolute overflow-hidden">
+                                    <div class="w-[14.75px] h-[14.5px] left-[4.75px] top-[4.75px] absolute outline-[1.5px] outline-[#002E25] outline-offset-[-0.75px]"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[652px] overflow-hidden flex justify-center items-center gap-2.5">
+                            <div class="w-[648px] flex justify-center flex-col">
+                                <span class="text-[#002E25] text-[14px] font-bold leading-[23.8px] break-words">Expert Support:</span>
+                                <span class="text-[#002E25] text-[14px] font-medium leading-[23.8px] break-words">Our advisors help structure financials & key documents.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[682px] overflow-hidden flex justify-start items-start gap-3.75">
+                        <div class="bg-white overflow-hidden flex justify-start items-center gap-2.5">
+                            <div class="w-[24px] h-[24px] relative overflow-hidden">
+                                <div class="w-[24px] h-[24px] absolute overflow-hidden">
+                                    <div class="w-[14.75px] h-[14.5px] left-[4.75px] top-[4.75px] absolute outline-[1.5px] outline-[#002E25] outline-offset-[-0.75px]"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden flex justify-center items-center gap-2.5">
+                            <div class="w-[463px] flex justify-center flex-col">
+                                <span class="text-[#002E25] text-[14px] font-bold leading-[23.8px] break-words">Exclusive Access:</span>
+                                <span class="text-[#002E25] text-[14px] font-medium leading-[23.8px] break-words">Investors get early access to promising startups.</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[682px] pt-[10px] pb-[10px] overflow-hidden flex justify-start items-start gap-3.75">
+                        <div class="bg-white overflow-hidden flex justify-start items-center gap-2.5">
+                            <div class="w-[24px] h-[24px] relative overflow-hidden">
+                                <div class="w-[24px] h-[24px] absolute overflow-hidden">
+                                    <div class="w-[14.75px] h-[14.5px] left-[4.75px] top-[4.75px] absolute outline-[1.5px] outline-[#002E25] outline-offset-[-0.75px]"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden flex justify-center items-center gap-2.5">
+                            <div class="w-[626px] flex justify-center flex-col">
+                                <span class="text-[#002E25] text-[14px] font-bold leading-[23.8px] break-words">Trust & Transparency:</span>
+                                <span class="text-[#002E25] text-[14px] font-medium leading-[23.8px] break-words">We provide clear, structured insights for better decision-making.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[164.01px] h-[28.67px] text-center text-white text-[14px] font-poppins font-normal uppercase leading-[20.3px] tracking-[0.19px] break-words">
+                More About Us
+            </div>
+        </div>
+    </div>
+    
+
+
+    <div class="mx-auto w-[90%] lg:w-[1708px] h-auto md:h-[715px] py-16 md:py-30">
+        <p class="text-[14px] font-medium font-inter leading-[2.8px] tracking-[-0.08px] text-[#3C4049] mb-3 scroll-section">Testimonials</p>
+        <h1 class="text-[32px] md:text-[40px] font-inter font-medium leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[#002E25] scroll-section">Success Stories</h1>
+        <div class="scrollable-container mt-8 md:mt-12">
+            <div class="scrollable-item w-[85vw] md:w-[376px] h-auto md:h-[389.39px] bg-white rounded-[12px] border border-[#EBECEF] p-5 py-8 card-hover">
+                <p class="text-[#002E25] leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[18px] font-inter font-medium">Business 1</p>
+                <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
+                <div class="flex justify-start gap-4 py-4">
+                    <div><img src="./assets/images/user1.png" class="w-12 h-12"></div>
+                    <div>
+                        <h6 class="text-[#060B13] leading-[1.2] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[18px] md:text-[21.9375px] mb-1 md:mb-2">Trevor Ogina</h6>
+                        <p class="leading-[1.2] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[12px] md:text-[12.94px] font-medium">July 27, 2025</p>
+                    </div>
+                </div>
+                <p class="text-[14px] text-[#3C4049] leading-[1.5] md:leading-[23.8px] tracking-[-0.08px] font-inter my-4">Capital Connect helped us structure our financials and pitch deck, leading to a $500K investment.</p>
+                <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
+                <ul class="flex justify-center md:justify-start mt-4 md:mt-5">
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                </ul>    
+            </div>
+            <div class="scrollable-item w-[85vw] md:w-[376px] h-auto md:h-[389.39px] bg-white rounded-[12px] border border-[#EBECEF] p-5 py-8 card-hover">
+                <p class="text-[#002E25] leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[18px] font-inter font-medium">Business 1</p>
+                <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
+                <div class="flex justify-start gap-4 py-4">
+                    <div><img src="./assets/images/user1.png" class="w-12 h-12"></div>
+                    <div>
+                        <h6 class="text-[#060B13] leading-[1.2] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[18px] md:text-[21.9375px] mb-1 md:mb-2">Trevor Ogina</h6>
+                        <p class="leading-[1.2] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[12px] md:text-[12.94px] font-medium">July 27, 2025</p>
+                    </div>
+                </div>
+                <p class="text-[14px] text-[#3C4049] leading-[1.5] md:leading-[23.8px] tracking-[-0.08px] font-inter my-4">Capital Connect helped us structure our financials and pitch deck, leading to a $500K investment.</p>
+                <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
+                <ul class="flex justify-center md:justify-start mt-4 md:mt-5">
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                </ul>    
+            </div>
+            <div class="scrollable-item w-[85vw] md:w-[376px] h-auto md:h-[389.39px] bg-white rounded-[12px] border border-[#EBECEF] p-5 py-8 card-hover">
+                <p class="text-[#002E25] leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[18px] font-inter font-medium">Business 1</p>
+                <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
+                <div class="flex justify-start gap-4 py-4">
+                    <div><img src="./assets/images/user1.png" class="w-12 h-12"></div>
+                    <div>
+                        <h6 class="text-[#060B13] leading-[1.2] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[18px] md:text-[21.9375px] mb-1 md:mb-2">Trevor Ogina</h6>
+                        <p class="leading-[1.2] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[12px] md:text-[12.94px] font-medium">July 27, 2025</p>
+                    </div>
+                </div>
+                <p class="text-[14px] text-[#3C4049] leading-[1.5] md:leading-[23.8px] tracking-[-0.08px] font-inter my-4">Capital Connect helped us structure our financials and pitch deck, leading to a $500K investment.</p>
+                <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
+                <ul class="flex justify-center md:justify-start mt-4 md:mt-5">
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                </ul>    
+            </div>
+            <div class="scrollable-item w-[85vw] md:w-[376px] h-auto md:h-[389.39px] bg-white rounded-[12px] border border-[#EBECEF] p-5 py-8 card-hover">
+                <p class="text-[#002E25] leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[18px] font-inter font-medium">Business 1</p>
+                <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
+                <div class="flex justify-start gap-4 py-4">
+                    <div><img src="./assets/images/user1.png" class="w-12 h-12"></div>
+                    <div>
+                        <h6 class="text-[#060B13] leading-[1.2] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[18px] md:text-[21.9375px] mb-1 md:mb-2">Trevor Ogina</h6>
+                        <p class="leading-[1.2] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[12px] md:text-[12.94px] font-medium">July 27, 2025</p>
+                    </div>
+                </div>
+                <p class="text-[14px] text-[#3C4049] leading-[1.5] md:leading-[23.8px] tracking-[-0.08px] font-inter my-4">Capital Connect helped us structure our financials and pitch deck, leading to a $500K investment.</p>
+                <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
+                <ul class="flex justify-center md:justify-start mt-4 md:mt-5">
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                </ul>    
+            </div>
+
+            <div class="scrollable-item w-[85vw] md:w-[376px] h-auto md:h-[389.39px] bg-white rounded-[12px] border border-[#EBECEF] p-5 py-8 card-hover">
+                <p class="text-[#002E25] leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[18px] font-inter font-medium">Business 1</p>
+                <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
+                <div class="flex justify-start gap-4 py-4">
+                    <div><img src="./assets/images/user1.png" class="w-12 h-12"></div>
+                    <div>
+                        <h6 class="text-[#060B13] leading-[1.2] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[18px] md:text-[21.9375px] mb-1 md:mb-2">Trevor Ogina</h6>
+                        <p class="leading-[1.2] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[12px] md:text-[12.94px] font-medium">July 27, 2025</p>
+                    </div>
+                </div>
+                <p class="text-[14px] text-[#3C4049] leading-[1.5] md:leading-[23.8px] tracking-[-0.08px] font-inter my-4">Capital Connect helped us structure our financials and pitch deck, leading to a $500K investment.</p>
+                <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
+                <ul class="flex justify-center md:justify-start mt-4 md:mt-5">
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                    <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                </ul>    
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="w-full h-full p-24 overflow-hidden flex flex-col justify-start items-start gap-2.5">
+        <div class="w-[1862px] h-[172px] relative">
+            <div class="w-[116px] h-[20px] absolute left-0 top-[28px] flex justify-center items-center text-[#3C4049] text-xl font-medium leading-[23.8px] break-words">The Team</div>
+            <div class="w-[1862px] h-[134px] absolute left-[-9px] top-[38px] overflow-hidden">
+                <div class="w-[977px] h-[104px] absolute left-[8px] top-[-1px] flex justify-center items-center text-[#1A1A1A] text-4xl font-medium leading-[60px] break-words">The People Behind Your Growth Journey</div>
+            </div>
+        </div>
+        <div class="w-[1917px] h-[936px] py-[10px] bg-white overflow-hidden flex justify-start items-start gap-2.5">
+            <div class="w-[534px] h-[926px] px-6 py-8 bg-[#F9F9F9] flex flex-col justify-start items-center gap-2.5">
+                <div class="self-stretch h-[904px] flex flex-col justify-start items-start gap-5">
+                    <img class="w-[483px] h-[483px]" src="https://placehold.co/483x483" />
+                    <div class="self-stretch p-5 bg-white flex flex-col justify-start items-start gap-2.5">
+                        <div class="self-stretch flex flex-col justify-center items-start">
+                            <div class="self-stretch pb-2 flex justify-start items-start gap-2.5">
+                                <div class="flex-1 text-black text-2xl font-bold leading-[28.8px] break-words">Francis Nasyomba</div>
+                            </div>
+                            <div class="self-stretch pb-6 flex justify-start items-start gap-2.5">
+                                <div class="flex-1 text-[#3C3C43] text-sm font-normal leading-[19.6px] break-words">Founder & CEO</div>
+                            </div>
+                            <div class="w-[50px] h-[3px] relative bg-[#FDCB43]"></div>
+                            <div class="self-stretch pt-6 pb-5 flex justify-start items-start gap-2.5">
+                                <div class="flex-1 text-[#767676] text-base font-normal leading-[21px] break-words">A CFA Charter holder & CPA with over 17 years of experience in accounting & investment, specializing in private capital and capital raising across Africa. As the CEO & Principal of Raisin Capital, he oversees operations & capital-raising activities.</div>
+                            </div>
+                            <div class="self-stretch pt-4 flex justify-center items-center gap-4">
+                                <div class="flex-1 p-4 bg-[#F3F5F6] rounded-lg flex flex-col justify-center items-center">
+                                    <div class="flex justify-start items-start gap-2.5">
+                                        <div class="w-[21.62px] h-[24px] relative overflow-hidden">
+                                            <div class="w-[19.82px] h-[22px] absolute left-[0.90px] top-[1px] bg-[#B4B6C4]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w-[534px] h-[926px] px-6 py-8 bg-[#FBFBFB] flex flex-col justify-start items-center gap-2.5">
+                <div class="self-stretch h-[904px] flex flex-col justify-start items-start gap-5">
+                    <img class="w-[483px] h-[483px]" src="https://placehold.co/483x483" />
+                    <div class="self-stretch p-5 bg-white flex flex-col justify-start items-start gap-2.5">
+                        <div class="self-stretch flex flex-col justify-center items-start">
+                            <div class="self-stretch pb-2 flex justify-start items-start gap-2.5">
+                                <div class="flex-1 text-black text-2xl font-bold leading-[28.8px] break-words">Penny Njoki</div>
+                            </div>
+                            <div class="self-stretch pb-6 flex justify-start items-start gap-2.5">
+                                <div class="flex-1 text-[#3C3C43] text-sm font-normal leading-[19.6px] break-words">Head of Strategy & Partnerships</div>
+                            </div>
+                            <div class="w-[50px] h-[3px] relative bg-[#FDCB43]"></div>
+                            <div class="self-stretch pt-6 pb-5 flex justify-start items-start gap-2.5">
+                                <div class="flex-1 text-[#767676] text-base font-normal leading-[21px] break-words">A professional with over 12 years’ experience in development & implementation of Business Strategies, Corporate Policies and Systems, Client Relations &Team Management.</div>
+                            </div>
+                            <div class="self-stretch pt-4 flex justify-center items-center gap-4">
+                                <div class="flex-1 p-4 bg-[#F3F5F6] rounded-lg flex flex-col justify-center items-center">
+                                    <div class="flex justify-start items-start gap-2.5">
+                                        <div class="w-[21.62px] h-[24px] relative overflow-hidden">
+                                            <div class="w-[19.82px] h-[22px] absolute left-[0.90px] top-[1px] bg-[#B4B6C4]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="w-[534px] h-[926px] px-6 py-8 bg-[#FBFBFB] flex flex-col justify-start items-center gap-2.5">
+                <div class="self-stretch h-[904px] flex flex-col justify-start items-start gap-5">
+                    <img class="w-[483px] h-[483px]" src="https://placehold.co/483x483" />
+                    <div class="self-stretch p-5 bg-white flex flex-col justify-start items-start gap-2.5">
+                        <div class="self-stretch flex flex-col justify-center items-start">
+                            <div class="self-stretch pb-2 flex justify-start items-start gap-2.5">
+                                <div class="flex-1 text-black text-2xl font-bold leading-[28.8px] break-words">Victor Karanja</div>
+                            </div>
+                            <div class="self-stretch pb-6 flex justify-start items-start gap-2.5">
+                                <div class="flex-1 text-[#3C3C43] text-sm font-normal leading-[19.6px] break-words">Tech Lead</div>
+                            </div>
+                            <div class="w-[50px] h-[3px] relative bg-[#FDCB43]"></div>
+                            <div class="self-stretch pt-6 pb-5 flex justify-start items-start gap-2.5">
+                                <div class="flex-1 text-[#767676] text-base font-normal leading-[21px] break-words">A Full Stack Software Engineer with over 10 years of experience in developing scalable web and mobile applications. Proficient in technologies like Node.js, Ruby on Rails, React, & Android (Kotlin/Java).</div>
+                            </div>
+                            <div class="self-stretch pt-4 flex justify-center items-center gap-4">
+                                <div class="flex-1 p-4 bg-[#F3F5F6] rounded-lg flex flex-col justify-center items-center">
+                                    <div class="flex justify-start items-start gap-2.5">
+                                        <div class="w-[21.62px] h-[24px] relative overflow-hidden">
+                                            <div class="w-[19.82px] h-[22px] absolute left-[0.90px] top-[1px] bg-[#B4B6C4]"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <div class="w-full h-full px-2 pt-24 pb-24 overflow-hidden flex justify-center items-start gap-2">
+        <div class="w-[1670px] flex-col justify-start items-center gap-14">
+            <div class="self-stretch text-center text-[#170F49] text-4xl font-bold leading-11 break-words">Our Growth, Your Success</div>
+            <div class="flex justify-start items-start gap-14">
+                <div class="text-center text-[#447468] text-5xl font-bold leading-[62px] break-words">500+</div>
+                <div class="text-center text-[#170F49] text-2xl font-bold leading-9 break-words">Customer satisfaction</div>
+                <div class="text-center text-[#447468] text-5xl font-bold leading-[62px] break-words">60+</div>
+                <div class="text-center text-[#170F49] text-2xl font-bold leading-9 break-words">Investors</div>
+                <div class="text-center text-[#447468] text-5xl font-bold leading-[62px] break-words">125+</div>
+                <div class="text-center text-[#170F49] text-2xl font-bold leading-9 break-words">Advisory sessions</div>
+                <div class="text-center text-[#447468] text-5xl font-bold leading-[62px] break-words">7+</div>
+                <div class="text-center text-[#170F49] text-2xl font-bold leading-9 break-words">Countries across Africa</div>
+                <div class="text-center text-[#447468] text-5xl font-bold leading-[62px] break-words">20+</div>
+                <div class="text-center text-[#170F49] text-2xl font-bold leading-9 break-words">Partnership conversations</div>
+            </div>
+        </div>
+    </div>
+    
+      
+
+
+
+
+
+    <div id="section6" class="h-auto md:h-[740px] py-16 md:py-20 ">        
+        <div class="bg-[#FCBA05] rounded-2xl h-auto md:h-[568px] px-4 mx-auto w-[90%] lg:w-[1708px] py-12 md:py-24 transition-all hover:shadow-xl">
+            <h1 class="text-center leading-[1.2] md:leading-[70px] text-[#064635] tracking-[-1.2px] font-inter font-medium text-[32px] md:text-[60px]">Ready to take the next step?</h1>
+            <p class="text-center text-[#000000] mt-6 leading-[1.5] md:leading-[41px] tracking-[-0.18px] font-inter text-[18px] md:text-[20px] font-normal not-italic">Get started with the leading platform for connecting businesses and <br/>investors seamlessly.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-6 mt-8 md:mt-[60px]">
+                <button class="leading-[24px] font-semibold text-[14px] bg-[#FFFFFF] text-[#064635] flex justify-center items-center px-[24px] md:px-[38px] py-[16px] md:py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#f0f0f0]">Get Investment Ready<span class="ml-2"><img src="./assets/icons/arrow-right.svg" class="w-4 h-4 inline"></span></button>
+                <button class="leading-[24px] font-semibold text-[14px] bg-[#FFFFFF] text-[#064635] flex justify-center items-center px-[24px] md:px-[38px] py-[16px] md:py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#f0f0f0]">Find Businesses to Invest in<span class="ml-2"><img src="./assets/icons/arrow-right.svg" class="w-4 h-4 inline"></span></button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+      <div id="footer" class="h-auto md:h-[680px] bg-[#000000]">
+        <div class="text-start md:grid md:grid-cols-5  md:px-4 md:mx-auto w-[90%] lg:w-[1708px] md:p-5 p-15 md:py-12 md:py-20 gap-8 md:gap-0 ">
+            <div class="md:col-span-1 flex md:justify-center md:block mb-10 md:mb-0"><img src="./assets/images/logo_black.png" class="w-40 md:w-auto transition-transform hover:scale-105"></div>
+            <div class="md:col-span-1">
+                <p class="text-[#B4B6C4] text-[14px]  md:text-[16px] font-chivo md:text-center md:text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quas error rem voluptates</p>
+                
+                
+                <p class="text-[#B4B6C4] text-[16px] font-chivo mt-4 text-center text-start md:text-left flex items-center gap-2">
+                    <img src="./assets/icons/phone.svg" class="w-5 h-5"> +254715501703
+                  </p>
+                  
+                  <p class="text-[#B4B6C4] text-[16px] font-chivo text-center text-start md:text-left flex items-center gap-2">
+                    <img src="./assets/icons/mail.svg" class="w-5 h-5"> services@capitalconnect.africa
+                  </p>
+                  
+                
+           
+                <ul class="flex justify-start md:justify-start gap-4 mt-8 md:mt-28 md:hidden">
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/bx_bxl-instagram-alt.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_twitter-fill.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_linkedin-fill.png"></li>
+                </ul>
+                <p class="text-xs mt-4 md:mt-17 text-[#B4B6C4] font-chivo text-center md:text-left text-start">@All Rights Reserved</p>
+            </div>
+            <div class="hidden md:block md:col-span-1">
+                <h1 class="font-bold text-[16px] font-inter leading-[20px] tracking-[0px] mb-3 text-center md:text-left">Benefits</h1>
+                <ul class="text-center md:text-left">
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">For Entrepreneurs</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">For Investors</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">For Advisors</li>
+                </ul>
+            </div>
+            <div class="hidden md:block md:col-span-1">
+                <h1 class="font-bold text-[16px] font-inter leading-[20px] tracking-[0px] mb-3 text-center md:text-left">About</h1>
+                <ul class="text-center md:text-left">
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Our Team</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Careers</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Contact Us</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Support</li>
+                </ul>
+            </div>
+            <div class="hidden md:block md:col-span-1">
+                <h1 class="font-bold text-[16px] font-inter leading-[20px] tracking-[0px] mb-3 text-center md:text-left">Resources</h1>
+                <ul class="text-center md:text-left">
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Disclaimer</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Terms</li>
+                </ul>
+                <ul class="flex justify-center md:justify-start gap-4 mt-8 md:mt-28">
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/bx_bxl-instagram-alt.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_twitter-fill.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_linkedin-fill.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+      
+      
+</body>
+</html>
