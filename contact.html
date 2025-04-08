@@ -1,277 +1,301 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Connect</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="assets/js/tailwind.js"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to maintain original layout */
+        .contact-info-card {
+            background: linear-gradient(to top, #064635, #064635);
+        }
+        @media (max-width: 768px) {
+            .contact-container {
+                flex-direction: column;
+            }
+            .contact-info-card {
+                height: auto;
+                min-height: 500px;
+            }
+            .contact-form {
+                padding: 2rem;
+            }
+            .nav-menu {
+                display: none;
+            }
+            .mobile-menu-button {
+                display: block;
+            }
+        }
+    </style>
 </head>
 
 <body class="font-inter">
 
-    <div class="w-full bg-white px-[100px] flex flex-row flex-wrap items-start justify-between h-[115px] overflow-hidden">
+    <!-- Navigation -->
+    <header class="w-full font-poppins bg-white px-4 lg:px-[100px] py-4 flex justify-between items-center h-[115px]">
         <!-- Logo -->
-        <div class="w-[145px] pt-5 flex flex-col gap-2.5 items-start">
-            <img class="w-full h-[67px] object-cover" src="assets/images/logo_green.png" alt="Logo">
+        <div class="w-[145px]">
+            <img class="w-full h-[67px] object-contain" src="assets/images/logo_green.png" alt="Capital Connect Logo">
         </div>
-    
-        <!-- Navigation Menu -->
-        <div class="w-[1215px] h-[114px] px-2.5 py-[29px] flex flex-row gap-2.5 items-start justify-end overflow-hidden">
-            <!-- Home -->
-            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
-                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">Home</div>
-            </div>
-    
-            <!-- For Businesses -->
-            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
-                <div class="font-['Poppins']">
-                    <span class="text-[18px] font-normal text-[#FCBA05]">For Businesses</span>
-                    <span class="text-[18px] font-normal text-[#090C10]"></span>
-                </div>
-                <div class="w-[22px] h-[22px] relative origin-top-left rotate-90 overflow-hidden">
-                    <svg class="absolute w-[31.24%] h-[56.17%] left-[51.04%] top-[21.95%]" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        
+        <!-- Desktop Menu -->
+        <nav class="nav-menu hidden lg:flex items-center space-x-6">
+            <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">Home</a>
+            
+            <div class="relative group">
+                <button class="text-lg text-[#FCBA05] flex items-center gap-1">
+                    For Businesses
+                    <svg class="w-4 h-4 transform group-hover:rotate-180 transition" viewBox="0 0 14 8">
                         <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
                     </svg>
-                </div>
+                </button>
             </div>
-    
-            <!-- For Investors -->
-            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
-                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">For Investors</div>
-                <div class="w-[22px] h-[22px] relative origin-top-left rotate-90 overflow-hidden">
-                    <svg class="absolute w-[31.24%] h-[56.17%] left-[51.04%] top-[21.95%]" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+            
+            <div class="relative group">
+                <button class="text-lg text-[#090C10] hover:text-[#FCBA05] flex items-center gap-1 transition">
+                    For Investors
+                    <svg class="w-4 h-4 transform group-hover:rotate-180 transition" viewBox="0 0 14 8">
                         <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
                     </svg>
-                </div>
+                </button>
             </div>
-    
-            <!-- Pricing -->
-            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
-                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">Pricing</div>
-            </div>
-    
-            <!-- About Us -->
-            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
-                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">About Us</div>
-            </div>
-    
-            <!-- Contact Us -->
-            <div class="w-[157px] p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
-                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">Contact Us</div>
-            </div>
-    
-            <!-- Sign In Button -->
-            <div class="w-[232px] flex flex-col gap-2.5 items-start">
-                <div class="w-[232px] h-[51px] relative">
-                    <div class="w-full h-full rounded-[35px] border border-[#FCBA05] bg-[#FCBA05] absolute"></div>
-                    <div class="absolute left-[57px] top-[17px] text-[15px] font-medium text-[#FFFDFD] font-['Inter']">Sign In / Sign Up</div>
-                </div>
-            </div>
-        </div>
-    </div>
+            
+            <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">Pricing</a>
+            <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">About Us</a>
+            <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">Contact Us</a>
+        </nav>
+        
+        <!-- Sign In Button -->
+        <button class="hidden lg:flex px-6 py-3 rounded-full bg-[#FCBA05] text-white text-sm font-medium hover:bg-[#e0a800] transition">
+            Sign In / Sign Up
+        </button>
+        
+        <!-- Mobile Menu Button -->
+        <button class="mobile-menu-button lg:hidden text-[#090C10]">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </header>
 
+    <!-- Contact Header -->
+    <section class="w-full flex flex-col items-start justify-center py-16 lg:py-[106px] px-4 lg:px-[100px] bg-[#F0F4F3]">
+        <h1 class="text-4xl lg:text-[50px] font-medium text-[#1a1a1a] leading-tight lg:leading-[67.8px] tracking-tight lg:tracking-[-0.100625rem]">
+            Contacts
+        </h1>
+    </section>
 
-
-
-
-
-    <div class="flex flex-col items-start justify-center h-[416px] px-[100px] py-[106px] overflow-hidden bg-[#F0F4F3]">
-        <div class="text-[#1a1a1a] text-left font-medium text-[50px] leading-[67.8px] tracking-[-0.100625rem] h-[92px] w-full flex items-center justify-start">
-          Contacts
-        </div>
-      </div>
-
-
-      <div class="px-[120px] py-[97px]">
-        <div class="relative">
-            <div class="w-[1732px] h-[667px]  shadow-[0px_0px_60px_30px_rgba(0,0,0,0.03)] rounded-[10px]"></div>
-          
-            <div class="w-[491px] h-[647px] absolute left-[10px] top-[10px] overflow-hidden">
-              <img src="https://placehold.co/491x647" class="w-[491px] h-[647px] absolute left-0 top-0 rounded-[10px] bg-gradient-to-t from-[#064635] to-[#064635]" />
-              <div class="absolute left-[40px] top-[40px] text-white text-[28px] font-bold font-inter">Contact Information</div>
-              <div class="w-6 h-6 absolute left-[40px] top-[287px] overflow-hidden">
-                <div class="w-[16.5px] h-[21px] absolute left-[3.75px] top-[1.5px] bg-white"></div>
-                <div class="w-[6px] h-[6px] absolute left-[9px] top-[6.75px]"></div>
-              </div>
-              <div class="w-6 h-6 absolute left-[40px] top-[169px] overflow-hidden">
-                <div class="w-[9.01px] h-[9px] absolute left-[12.99px] top-[2px] bg-white"></div>
-                <div class="w-[17.81px] h-[17.81px] absolute left-[3px] top-[3.18px] bg-white"></div>
-              </div>
-              <div class="absolute left-[89px] top-[169px] text-white text-[16px] font-poppins">+254715501703</div>
-              <div class="w-6 h-6 absolute left-[40px] top-[223px] overflow-hidden">
-                <div class="w-[20px] h-[16px] absolute left-[2px] top-[4px] bg-white"></div>
-              </div>
-              <div class="absolute left-[89px] top-[223px] text-white text-[16px] font-poppins">services@capitalconnect.africa</div>
-              <div class="w-[288px] absolute left-[89px] top-[287px] text-white text-[16px] font-poppins">4th Floor, CVS Plaza, Lenana Road</div>
-              <div class="absolute left-[40px] top-[88px] text-[#C9C9C9] text-[18px] font-inter">Say something to start a live chat!</div>
-            </div>
-          
-            <div class="w-[1056px] h-[647px] p-[50px_150px_80px_150px] absolute left-[511px] top-[10px] overflow-hidden flex flex-col justify-start items-start gap-[10px]">
-              <div class="w-full py-[20px] flex items-center gap-[18px]">
-                <div class="flex-1 flex flex-col items-start">
-                  <div class="w-full flex flex-col gap-[8px]">
-                    <div class="text-[#8692A6] text-[16px] font-medium">First Name</div>
-                    <div class="w-full p-[12px] bg-white rounded outline outline-1 outline-[#CBD5E1] flex items-center gap-[8px]">
-                      <div class="flex-1 text-[#64748B] text-[16px] leading-[34px]">Enter your first name</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-1 flex flex-col items-start">
-                  <div class="w-full flex flex-col gap-[8px]">
-                    <div class="text-[#8692A6] text-[18px] font-medium leading-[26px]">Last Name</div>
-                    <div class="w-full p-[12px] bg-white rounded outline outline-1 outline-[#CBD5E1] flex items-center gap-[8px]">
-                      <div class="flex-1 text-[#64748B] text-[16px] leading-[34px]">Enter your Last Name</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-          
-              <div class="w-full py-[20px] flex items-center gap-[18px]">
-                <div class="flex-1 flex flex-col items-start">
-                  <div class="w-full flex flex-col gap-[8px]">
-                    <div class="text-[#8692A6] text-[18px] font-medium leading-[26px]">Email</div>
-                    <div class="w-full p-[12px] bg-white rounded outline outline-1 outline-[#CBD5E1] flex items-center gap-[8px]">
-                      <div class="flex-1 text-[#64748B] text-[16px] leading-[34px]">Enter your first name</div>
-                    </div>
-                  </div>
-                </div>
-                <div class="flex-1 flex flex-col items-start">
-                  <div class="w-full flex flex-col gap-[8px]">
-                    <div class="text-[#8692A6] text-[18px] font-medium leading-[26px]">Phone Number</div>
-                    <div class="w-full p-[12px] bg-white rounded outline outline-1 outline-[#CBD5E1] flex items-center gap-[8px]">
-                      <div class="flex-1 text-[#64748B] text-[16px] leading-[34px]">Enter Phone Number</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-      </div>
-
-
-
-    <div id="faq" class="bg-[#F3F7F6] h-auto py-16 md:py-30 ">  
-        <div class="mx-auto w-[90%] lg:w-[1708px]">
-            <p class="text-[14px] font-medium font-inter leading-[2.8px] tracking-[-0.08px] text-[#3C4049] mb-3">FAQ's</p>
-            <h1 class="text-[32px] md:text-[40px] font-inter font-medium leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[#002E25]">Frequently Asked Questions</h1>
-            <div class="grid grid-cols-1 md:grid-cols-2 mt-5 gap-4 md:gap-6">
-                <div>
-                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-[16px] h-auto md:h-[198px] w-full p-6 md:p-7 py-8 md:py-12 card-hover">
-                        <h6 class="text-[#170F49] text-[18px] md:text-[22px] font-medium font-inter leading-[1.2] md:leading-[28px] tracking-[0px] mb-2">What does "investment readiness" mean?</h6>
-                        <p class="text-[#6F6C90] leading-[1.5] md:leading-[30px] text-[16px] md:text-[18px] font-normal font-inter">It means your business has structured financials, a clear growth plan, and all necessary documents</p>
-                    </div>
-                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-[16px] h-auto md:h-[122px] w-full p-6 md:p-7 py-8 md:py-12 mt-4 card-hover">
-                        <h6 class="text-[#170F49] text-[18px] md:text-[22px] font-medium font-inter leading-[1.2] md:leading-[28px] tracking-[0px]">What type of business can I Invest in?</h6>
-                    </div>
-                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-[16px] h-auto md:h-[122px] w-full p-6 md:p-7 py-8 md:py-12 mt-4 card-hover">
-                        <h6 class="text-[#170F49] text-[18px] md:text-[22px] font-medium font-inter leading-[1.2] md:leading-[28px] tracking-[0px]">What type of business can I Invest in?</h6>
+    <!-- Contact Form Section -->
+    <section class="w-full px-4 lg:px-[120px] py-12 lg:py-[97px]">
+        <div class="relative w-full max-w-[1732px] mx-auto">
+            <!-- Background shadow (desktop only) -->
+            <div class="hidden lg:block w-full h-[667px] shadow-[0px_0px_60px_30px_rgba(0,0,0,0.03)] rounded-[10px]"></div>
+            
+            <!-- Contact Container -->
+            <div class="contact-container flex flex-col lg:flex-row gap-6 w-full">
+                <!-- Contact Information Card -->
+                <div class="contact-info-card w-full lg:w-[491px] h-auto lg:h-[647px] lg:absolute lg:left-[10px] lg:top-[10px] rounded-[10px] overflow-hidden relative">
+                    <!-- <img src="https://placehold.co/491x647" class="w-full h-full object-cover absolute opacity-30"> -->
+                    <div class="relative z-10 p-8 lg:p-10 h-full flex flex-col justify-start gap-10">
+                        <div class="">
+                            <h2 class="text-2xl lg:text-[28px] font-bold text-white mb-4">Contact Information</h2>
+                            <p class="text-[#C9C9C9] text-lg mb-8">Say something to start a live chat!</p>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <!-- Phone -->
+                            <div class="flex items-center gap-4">
+                                <div class="w-6 h-6 flex-shrink-0">
+                                    <img src="./assets/icons/phone.svg" class="w-6 h-6">
+                                </div>
+                                <p class="text-white text-base lg:text-[16px]">+254715501703</p>
+                            </div>
+                            
+                            <!-- Email -->
+                            <div class="flex items-center gap-4">
+                                <div class="w-6 h-6 flex-shrink-0">
+                                   <img src="./assets/icons/mail.svg" class="w-6 h-6">
+                                </div>
+                                <p class="text-white text-base lg:text-[16px]">services@capitalconnect.africa</p>
+                            </div>
+                            
+                            <!-- Address -->
+                            <div class="flex items-center gap-4">
+                                <div class="w-6 h-6 flex-shrink-0">
+                                    <img src="./assets/icons/location.svg" class="w-6 h-6">
+                                </div>
+                                <p class="text-white text-base lg:text-[16px]">4th Floor, CVS Plaza, Lenana Road</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-[16px] h-auto md:h-[122px] w-full p-6 md:p-7 py-8 md:py-12 card-hover">
-                        <h6 class="text-[#170F49] text-[18px] md:text-[22px] font-medium font-inter leading-[1.2] md:leading-[28px] tracking-[0px]">What type of business can I Invest in?</h6>
-                    </div>
-                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-[16px] h-auto md:h-[122px] w-full p-6 md:p-7 py-8 md:py-12 mt-4 card-hover">
-                        <h6 class="text-[#170F49] text-[18px] md:text-[22px] font-medium font-inter leading-[1.2] md:leading-[28px] tracking-[0px]">What type of business can I Invest in?</h6>
-                    </div>
-                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-[16px] h-auto md:h-[122px] w-full p-6 md:p-7 py-8 md:py-12 mt-4 card-hover">
-                        <h6 class="text-[#170F49] text-[18px] md:text-[22px] font-medium font-inter leading-[1.2] md:leading-[28px] tracking-[0px]">What type of business can I Invest in?</h6>
-                    </div>
+                
+                <!-- Contact Form -->
+                <div class="contact-form w-full lg:w-[1056px] lg:absolute lg:left-[511px] lg:top-[10px] bg-white rounded-[10px] p-6 lg:p-12 shadow-lg lg:shadow-none">
+                    <form class="space-y-6">
+                        <!-- Name Row -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div>
+                                <label class="text-[#8692A6] text-base lg:text-[16px] font-medium mb-2 block">First Name</label>
+                                <input type="text" placeholder="Enter your first name" class="w-full p-3 border border-[#CBD5E1] rounded focus:outline-none focus:ring-2 focus:ring-[#FCBA05]">
+                            </div>
+                            <div>
+                                <label class="text-[#8692A6] text-lg lg:text-[18px] font-medium mb-2 block">Last Name</label>
+                                <input type="text" placeholder="Enter your last name" class="w-full p-3 border border-[#CBD5E1] rounded focus:outline-none focus:ring-2 focus:ring-[#FCBA05]">
+                            </div>
+                        </div>
+                        
+                        <!-- Contact Row -->
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                            <div>
+                                <label class="text-[#8692A6] text-lg lg:text-[18px] font-medium mb-2 block">Email</label>
+                                <input type="email" placeholder="Enter your email" class="w-full p-3 border border-[#CBD5E1] rounded focus:outline-none focus:ring-2 focus:ring-[#FCBA05]">
+                            </div>
+                            <div>
+                                <label class="text-[#8692A6] text-lg lg:text-[18px] font-medium mb-2 block">Phone Number</label>
+                                <input type="tel" placeholder="Enter phone number" class="w-full p-3 border border-[#CBD5E1] rounded focus:outline-none focus:ring-2 focus:ring-[#FCBA05]">
+                            </div>
+                        </div>
+
+                        <div>
+                          <label class="text-[#8692A6] text-lg lg:text-[18px] font-medium mb-2 block">How can we help you?*</label>
+                          <input type="tel" placeholder="Enter message" class="w-full p-3 border border-[#CBD5E1] rounded focus:outline-none focus:ring-2 focus:ring-[#FCBA05]">
+                        </div>
+                        
+                        <!-- Submit Button -->
+                        <button type="submit" class="flex text-white flex-row justify-center items-center px-[38px] py-[20px] gap-[10px] isolate w-[298px] h-[53px] bg-[#064635] rounded-tr-[10px] rounded-bl-[10px] rounded-br-[10px] flex-none order-0 grow">
+                            Send<span class="ml-2"><img src="./assets/icons/PrimeNG Icons v5.0.0.png" class="w-6 h-6 inline"></span>
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
-
-
-    <div class="w-full h-full py-[100px] px-[125px] flex flex-col justify-center items-center gap-2">
-        <div class="w-[609px] h-[149px] relative">
-          <!-- Title -->
-          <div class="w-[609px] h-[72px] absolute top-[33.8px] left-[0.5px] overflow-hidden">
-            <div class="w-[601px] h-[62px] absolute top-[0.2px] left-[4px] text-center flex flex-col justify-center text-[#002E25] text-[40px] font-medium font-['Poppins'] leading-[72px]">
-              Still have questions?
+    <!-- FAQ Section -->
+    <section id="faq" class="bg-[#F3F7F6] py-16 lg:py-24">  
+        <div class="container mx-auto px-4 lg:px-8 max-w-[1708px]">
+            <p class="text-sm lg:text-[14px] font-medium text-[#3C4049] mb-3">FAQ's</p>
+            <h1 class="text-3xl lg:text-[40px] font-medium text-[#002E25] leading-tight lg:leading-[60px] mb-8">Frequently Asked Questions</h1>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-6">
+                <!-- Left Column -->
+                <div class="space-y-4 lg:space-y-6">
+                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-xl p-6 lg:p-8">
+                        <h3 class="text-lg lg:text-[22px] font-medium text-[#170F49] mb-2">What does "investment readiness" mean?</h3>
+                        <p class="text-[#6F6C90] text-base lg:text-[18px]">It means your business has structured financials, a clear growth plan, and all necessary documents</p>
+                    </div>
+                    
+                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-xl p-6 lg:p-8">
+                        <h3 class="text-lg lg:text-[22px] font-medium text-[#170F49]">What type of business can I Invest in?</h3>
+                    </div>
+                    
+                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-xl p-6 lg:p-8">
+                        <h3 class="text-lg lg:text-[22px] font-medium text-[#170F49]">What type of business can I Invest in?</h3>
+                    </div>
+                </div>
+                
+                <!-- Right Column -->
+                <div class="space-y-4 lg:space-y-6">
+                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-xl p-6 lg:p-8">
+                        <h3 class="text-lg lg:text-[22px] font-medium text-[#170F49]">What type of business can I Invest in?</h3>
+                    </div>
+                    
+                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-xl p-6 lg:p-8">
+                        <h3 class="text-lg lg:text-[22px] font-medium text-[#170F49]">What type of business can I Invest in?</h3>
+                    </div>
+                    
+                    <div class="bg-white shadow-[0px_5px_16px_rgba(8,15,52,0.06)] rounded-xl p-6 lg:p-8">
+                        <h3 class="text-lg lg:text-[22px] font-medium text-[#170F49]">What type of business can I Invest in?</h3>
+                    </div>
+                </div>
             </div>
-          </div>
-      
-          <!-- Subtitle -->
-          <div class="w-[587px] h-[20px] absolute top-[106.16px] left-[8.5px] text-center flex flex-col justify-center">
-            <span class="text-[#3C4049] text-[19px] font-medium font-['Inter'] leading-[23.8px]">
-              Send us an email at Info@capitalconnect.africa, or
-            </span>
-            <span class="text-[#FCBA05] text-[19px] font-medium font-['Inter'] underline leading-[23.8px]">
-              book a call
-            </span>
-          </div>
         </div>
-      </div>
+    </section>
 
-      
+    <!-- CTA Section -->
+    <section class="w-full py-16 lg:py-[100px] px-4 lg:px-[125px] bg-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl lg:text-[40px] font-medium text-[#002E25] mb-6">Still have questions?</h2>
+            <p class="text-lg lg:text-[19px] text-[#3C4049]">
+                Send us an email at <span class="text-[#3C4049]">Info@capitalconnect.africa</span>, or 
+                <a href="#" class="text-[#FCBA05] underline">book a call</a>
+            </p>
+        </div>
+    </section>
 
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12 lg:py-20">
+        <div class="container mx-auto px-4 lg:px-8 max-w-[1708px]">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
 
-
-
-      <div id="footer" class="h-auto md:h-[680px] bg-[#000000]">
-        <div class="text-start md:grid md:grid-cols-5  md:px-4 md:mx-auto w-[90%] lg:w-[1708px] md:p-5 p-15 md:py-12 md:py-20 gap-8 md:gap-0 ">
             <div class="md:col-span-1 flex md:justify-center md:block mb-10 md:mb-0"><img src="./assets/images/logo_black.png" class="w-40 md:w-auto transition-transform hover:scale-105"></div>
-            <div class="md:col-span-1">
-                <p class="text-[#B4B6C4] text-[14px]  md:text-[16px] font-chivo md:text-center md:text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quas error rem voluptates</p>
+
                 
+                <!-- Contact Info Column -->
+                <div class="lg:col-span-1 text-center lg:text-left">
+                    <p class="text-[#B4B6C4] text-sm lg:text-[16px] mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quas error rem voluptates</p>
+                    
+                    <div class="space-y-2">
+                        <p class="text-[#B4B6C4] text-base lg:text-[16px] flex items-center justify-center lg:justify-start gap-2">
+                            <img src="./assets/icons/phone.svg" class="w-5 h-5"> +254715501703
+                        </p>
+                        
+                        <p class="text-[#B4B6C4] text-base lg:text-[16px] flex items-center justify-center lg:justify-start gap-2">
+                            <img src="./assets/icons/mail.svg" class="w-5 h-5"> services@capitalconnect.africa
+                        </p>
+                    </div>
+                    
+                    <!-- Mobile Social Icons -->
+                    <div class="flex justify-center lg:hidden gap-4 mt-6">
+                        <a href="#" class="w-6 h-6 hover:scale-110 transition-transform"><img src="./assets/icons/bx_bxl-instagram-alt.png" alt="Instagram"></a>
+                        <a href="#" class="w-6 h-6 hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_twitter-fill.png" alt="Twitter"></a>
+                        <a href="#" class="w-6 h-6 hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_linkedin-fill.png" alt="LinkedIn"></a>
+                    </div>
+                    
+                    <p class="text-xs mt-6 text-[#B4B6C4]">@All Rights Reserved</p>
+                </div>
                 
-                <p class="text-[#B4B6C4] text-[16px] font-chivo mt-4 text-center text-start md:text-left flex items-center gap-2">
-                    <img src="./assets/icons/phone.svg" class="w-5 h-5"> +254715501703
-                  </p>
-                  
-                  <p class="text-[#B4B6C4] text-[16px] font-chivo text-center text-start md:text-left flex items-center gap-2">
-                    <img src="./assets/icons/mail.svg" class="w-5 h-5"> services@capitalconnect.africa
-                  </p>
-                  
+                <!-- Benefits Column -->
+                <div class="hidden lg:block lg:col-span-1">
+                    <h3 class="font-bold text-base mb-4">Benefits</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">For Entrepreneurs</a></li>
+                        <li><a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">For Investors</a></li>
+                        <li><a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">For Advisors</a></li>
+                    </ul>
+                </div>
                 
-           
-                <ul class="flex justify-start md:justify-start gap-4 mt-8 md:mt-28 md:hidden">
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/bx_bxl-instagram-alt.png"></li>
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_twitter-fill.png"></li>
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_linkedin-fill.png"></li>
-                </ul>
-                <p class="text-xs mt-4 md:mt-17 text-[#B4B6C4] font-chivo text-center md:text-left text-start">@All Rights Reserved</p>
-            </div>
-            <div class="hidden md:block md:col-span-1">
-                <h1 class="font-bold text-[16px] font-inter leading-[20px] tracking-[0px] mb-3 text-center md:text-left">Benefits</h1>
-                <ul class="text-center md:text-left">
-                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">For Entrepreneurs</li>
-                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">For Investors</li>
-                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">For Advisors</li>
-                </ul>
-            </div>
-            <div class="hidden md:block md:col-span-1">
-                <h1 class="font-bold text-[16px] font-inter leading-[20px] tracking-[0px] mb-3 text-center md:text-left">About</h1>
-                <ul class="text-center md:text-left">
-                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Our Team</li>
-                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Careers</li>
-                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Contact Us</li>
-                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Support</li>
-                </ul>
-            </div>
-            <div class="hidden md:block md:col-span-1">
-                <h1 class="font-bold text-[16px] font-inter leading-[20px] tracking-[0px] mb-3 text-center md:text-left">Resources</h1>
-                <ul class="text-center md:text-left">
-                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Disclaimer</li>
-                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Terms</li>
-                </ul>
-                <ul class="flex justify-center md:justify-start gap-4 mt-8 md:mt-28">
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/bx_bxl-instagram-alt.png"></li>
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_twitter-fill.png"></li>
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_linkedin-fill.png"></li>
-                </ul>
+                <!-- About Column -->
+                <div class="hidden lg:block lg:col-span-1">
+                    <h3 class="font-bold text-base mb-4">About</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">Our Team</a></li>
+                        <li><a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">Careers</a></li>
+                        <li><a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">Contact Us</a></li>
+                        <li><a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Resources Column -->
+                <div class="hidden lg:block lg:col-span-1">
+                    <h3 class="font-bold text-base mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">Disclaimer</a></li>
+                        <li><a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">Terms</a></li>
+                    </ul>
+                    
+                    <!-- Desktop Social Icons -->
+                    <div class="flex gap-4 mt-8 lg:mt-28">
+                        <a href="#" class="w-6 h-6 hover:scale-110 transition-transform"><img src="./assets/icons/bx_bxl-instagram-alt.png" alt="Instagram"></a>
+                        <a href="#" class="w-6 h-6 hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_twitter-fill.png" alt="Twitter"></a>
+                        <a href="#" class="w-6 h-6 hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_linkedin-fill.png" alt="LinkedIn"></a>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-
-
-      
-      
+    </footer>
 </body>
 </html>
