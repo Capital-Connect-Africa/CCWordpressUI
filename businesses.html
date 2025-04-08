@@ -1,0 +1,663 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capital Connect</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="assets/js/tailwind.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body class="font-inter">
+
+    <div class="w-full bg-white px-[100px] flex flex-row flex-wrap items-start justify-between h-[115px] overflow-hidden">
+        <!-- Logo -->
+        <div class="w-[145px] pt-5 flex flex-col gap-2.5 items-start">
+            <img class="w-full h-[67px] object-cover" src="assets/images/logo_green.png" alt="Logo">
+        </div>
+    
+        <!-- Navigation Menu -->
+        <div class="w-[1215px] h-[114px] px-2.5 py-[29px] flex flex-row gap-2.5 items-start justify-end overflow-hidden">
+            <!-- Home -->
+            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">Home</div>
+            </div>
+    
+            <!-- For Businesses -->
+            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="font-['Poppins']">
+                    <span class="text-[18px] font-normal text-[#FCBA05]">For Businesses</span>
+                    <span class="text-[18px] font-normal text-[#090C10]"></span>
+                </div>
+                <div class="w-[22px] h-[22px] relative origin-top-left rotate-90 overflow-hidden">
+                    <svg class="absolute w-[31.24%] h-[56.17%] left-[51.04%] top-[21.95%]" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
+                    </svg>
+                </div>
+            </div>
+    
+            <!-- For Investors -->
+            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">For Investors</div>
+                <div class="w-[22px] h-[22px] relative origin-top-left rotate-90 overflow-hidden">
+                    <svg class="absolute w-[31.24%] h-[56.17%] left-[51.04%] top-[21.95%]" width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
+                    </svg>
+                </div>
+            </div>
+    
+            <!-- Pricing -->
+            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">Pricing</div>
+            </div>
+    
+            <!-- About Us -->
+            <div class="p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">About Us</div>
+            </div>
+    
+            <!-- Contact Us -->
+            <div class="w-[157px] p-2.5 flex flex-row gap-2.5 items-start overflow-hidden">
+                <div class="text-[18px] font-normal text-[#090C10] font-['Poppins']">Contact Us</div>
+            </div>
+    
+            <!-- Sign In Button -->
+            <div class="w-[232px] flex flex-col gap-2.5 items-start">
+                <div class="w-[232px] h-[51px] relative">
+                    <div class="w-full h-full rounded-[35px] border border-[#FCBA05] bg-[#FCBA05] absolute"></div>
+                    <div class="absolute left-[57px] top-[17px] text-[15px] font-medium text-[#FFFDFD] font-['Inter']">Sign In / Sign Up</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+ 
+    <div class="self-stretch h-[1038px] relative overflow-hidden bg-[#f4f8f7]">
+        <div class="w-[1920px] h-96 px-24 py-28 left-0 top-[24px] absolute inline-flex flex-col justify-center items-start gap-2.5 overflow-hidden">
+            <div class="self-stretch h-24 justify-center text-zinc-900 text-5xl font-medium font-['Inter'] leading-[67.80px]">Turn Your Vision into a Funded Reality</div>
+            <div class="self-stretch h-5 justify-center text-neutral-700 text-lg font-normal font-['Inter'] leading-loose">Prepare your business for investment with expert support and connect with investors looking for opportunities like yours.</div>
+        </div>
+        <div class="w-[1924px] h-px left-0 top-[1077px] absolute"></div>
+        <div class="w-[1920px] px-24 left-0 top-[421px] absolute inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+            <img class="" src="assets/images/business_top.png" />
+        </div>
+    </div>
+ 
+
+    <div>
+        <div class="w-[1910px] h-44 pt-9 pb-1.5 bg-orange-50 inline-flex justify-center items-center">
+            <div class="w-[501px] h-36 text-center justify-center text-emerald-950 text-4xl font-medium font-['Poppins'] leading-[50px]">Why Capital Connect?</div>
+        </div>
+    </div>
+
+    <div>
+        <div class="w-[1910px] h-[485px] pb-9 bg-orange-50 inline-flex justify-center items-center gap-7">
+            <div class="w-[468px] h-96 px-8 py-10 relative bg-white rounded-2xl shadow-[0px_0px_0px_4px_rgba(24,24,27,0.01)] inline-flex flex-col justify-start items-center gap-7 overflow-hidden">
+                <div class="w-14 h-14 relative bg-neutral-100 rounded-[999px]">
+                    <img class="" src="assets/icons/briefcase_icon.png" />
+                </div>
+                <div class="w-60 h-9 text-center justify-center text-zinc-950 text-xl font-medium font-['Inter'] leading-relaxed">Investor-Readiness Made Simple</div>
+                <div class="w-96 h-12 text-center justify-center text-zinc-700 text-sm font-normal font-['Inter'] leading-normal">Get expert guidance on financial structuring, business documentation, and pitch refinement.</div>
+                <div class="w-[468px] h-96 left-0 top-0 absolute rounded-2xl border border-gray-200"></div>
+            </div>
+            <div class="w-[468px] h-96 px-8 py-10 relative bg-white rounded-2xl shadow-[0px_0px_0px_4px_rgba(24,24,27,0.01)] inline-flex flex-col justify-start items-center gap-7 overflow-hidden">
+                <div class="w-14 h-14 relative bg-neutral-100 rounded-[999px]">
+                    <img class="" src="assets/icons/briefcase_icon.png" />
+                </div>
+                <div class="w-60 h-12 text-center justify-center text-zinc-950 text-xl font-medium font-['Inter'] leading-relaxed">Access a Network of Investors</div>
+                <div class="w-96 h-12 text-center justify-center text-zinc-700 text-sm font-normal font-['Inter'] leading-normal">Browse potential investors before signing up and target the right opportunities.</div>
+                <div class="w-[468px] h-96 left-0 top-0 absolute rounded-2xl border border-gray-200"></div>
+            </div>
+            <div class="w-[468px] h-96 px-8 py-10 relative bg-white rounded-2xl shadow-[0px_0px_0px_4px_rgba(24,24,27,0.01)] inline-flex flex-col justify-start items-center gap-7 overflow-hidden">
+                <div class="w-14 h-14 relative bg-neutral-100 rounded-[999px]">
+                    <img class="" src="assets/icons/briefcase_icon.png" />
+                </div>
+                <div class="w-60 h-12 text-center justify-center text-zinc-950 text-xl font-medium font-['Inter'] leading-relaxed"> Seamless, Data-Driven Process</div>
+                <div class="w-96 h-12 text-center justify-center text-zinc-700 text-sm font-normal font-['Inter'] leading-normal">Use our platform to organize, track, and improve your investment journey.</div>
+                <div class="w-[468px] h-96 left-0 top-0 absolute rounded-2xl border border-gray-200"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="self-stretch h-24 relative">
+        <div class="w-56 h-1 left-[1704.15px] top-[74.07px] absolute text-center justify-start text-white text-sm font-normal font-['Poppins'] uppercase leading-tight tracking-tight">More About Us</div>
+        <div class="w-36 h-24 left-0 top-0 absolute"></div>
+    </div>
+
+
+    <div>
+        <div class="self-stretch h-[639px] relative">
+            <div class="w-[639.23px] h-[487.65px] left-[245.46px] top-0 absolute bg-white">
+                <img class="w-[822px] h-[548px]" src="assets/images/yellow-jacket-man.png" />
+            </div>
+            <div class="w-56 h-6 left-[1704.15px] top-[535.80px] absolute text-center justify-start text-white text-sm font-normal font-['Poppins'] uppercase leading-tight tracking-tight">More About Us</div>
+            <div class="w-[1008.17px] h-[639px] left-0 top-0 absolute"></div>
+            <div class="w-[829.45px] h-96 left-[1067.43px] top-[77px] absolute">
+                <div class="w-[829px] h-14 left-0 top-[103.80px] absolute"></div>
+                <div class="w-96 h-36 left-[106.12px] top-[-33px] absolute justify-center text-emerald-950 text-4xl font-medium font-['Poppins'] leading-[50px]">Key Features for Businesses</div>
+                <div class="w-[504px] h-64 left-[108px] top-[104px] absolute overflow-hidden">
+                    <div class="w-16 h-20 left-0 top-0 absolute overflow-hidden">
+                        <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                            <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-80 h-5 left-[32px] top-0 absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-normal">Financial structuring & business documentation</div>
+                    <div class="w-16 h-20 left-0 top-[48px] absolute overflow-hidden">
+                        <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                            <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[463px] h-5 left-[32px] top-[48px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-tight">Access to investor insights before signing up</div>
+                    <div class="w-8 h-9 left-0 top-[96px] absolute overflow-hidden">
+                        <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                            <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-8 h-9 left-0 top-[147px] absolute overflow-hidden">
+                        <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                            <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-8 h-9 left-0 top-[198px] absolute overflow-hidden">
+                        <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                            <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[454px] h-5 left-[32px] top-[96px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-normal"> Pitch preparation & fundraising strategy</div>
+                    <div class="w-[454px] h-5 left-[32px] top-[147px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-normal">Smart matchmaking with potential investors</div>
+                    <div class="w-[454px] h-5 left-[32px] top-[198px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-normal">Secure data-sharing for due diligence</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="p-24 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+        <div class="w-[1789px] h-44 relative">
+            <div class="w-[1688px] h-9 left-[-1px] top-[7px] absolute text-center justify-center text-zinc-700 text-lg font-medium font-['Inter'] leading-normal">What we offer</div>
+            <div class="w-[1674px] h-32 left-[13px] top-[38px] absolute overflow-hidden">
+                <div class="w-[1688px] h-24 left-[8px] top-[-1px] absolute text-center justify-center text-emerald-950 text-4xl font-medium font-['Poppins'] leading-[50px]">Key Services for SMEs</div>
+            </div>
+        </div>
+        <div class="self-stretch p-2.5 bg-white inline-flex justify-start items-start gap-7 flex-wrap content-start overflow-hidden">
+            <div class="w-[539px] h-72 bg-white rounded-[10px] outline outline-1 outline-offset-[-1px] outline-emerald-800/10 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+                <div class="w-[530px]  bg-white inline-flex justify-center items-start overflow-hidden">
+                    <img class="h-[110px]" src="assets/icons/notebook_pen.svg" />
+                </div>
+                <div class="w-96 h-px pb-6"></div>
+                <div class="self-stretch px-7 py-5 bg-white flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+                    <div class="w-96 flex flex-col justify-center items-start gap-2.5">
+                        <div class="self-stretch h-7 relative">
+                            <div class="w-96 left-0 top-0 absolute text-center justify-start text-black text-xl font-semibold font-['Inter'] leading-normal"> Expert Advisory Access</div>
+                        </div>
+                    </div>
+                    <div class="self-stretch h-16 pt-1.5 flex flex-col justify-center items-start gap-2.5">
+                        <div class="w-[500px] h-16 pb-6 inline-flex justify-center items-start gap-2.5">
+                            <div class="w-[460px] text-center justify-start text-zinc-700 text-sm font-normal font-['Inter'] leading-tight">Connect with seasoned business advisors to refine your strategy, structure your financials, and navigate the investment landscape.<br/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[539px] bg-white rounded-[10px] outline outline-1 outline-offset-[-1px] outline-emerald-800/10 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+                <div class="w-[530px] h-32 p-2.5 bg-white inline-flex justify-center items-start gap-2.5 overflow-hidden">
+                    <img class="h-[110px]" src="assets/icons/notebook_pen.svg" />
+                </div>
+                <div class="w-96 h-px pb-6"></div>
+                <div class="self-stretch px-7 py-5 bg-white flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+                    <div class="w-96 flex flex-col justify-center items-start gap-2.5">
+                        <div class="self-stretch h-7 relative">
+                            <div class="w-96 left-0 top-0 absolute text-center justify-start text-black text-xl font-semibold font-['Inter'] leading-normal">Financial & Business Structuring</div>
+                        </div>
+                    </div>
+                    <div class="self-stretch h-16 pt-1.5 flex flex-col justify-center items-start gap-2.5">
+                        <div class="w-[500px] h-16 pb-6 inline-flex justify-center items-start gap-2.5">
+                            <div class="w-[460px] text-center justify-start text-zinc-700 text-sm font-normal font-['Inter'] leading-tight">Get expert support in organizing your financials, forecasts, and business model to attract investors.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[539px] bg-white rounded-[10px] outline outline-1 outline-offset-[-1px] outline-emerald-800/10 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+                <div class="w-[530px] h-32 p-2.5 bg-white inline-flex justify-center items-start gap-2.5 overflow-hidden">
+                    <img class="h-[110px]" src="assets/icons/notebook_pen.svg" />                    
+                </div>
+                <div class="w-96 h-px pb-6"></div>
+                <div class="self-stretch px-7 py-5 bg-white flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+                    <div class="w-96 flex flex-col justify-center items-start gap-2.5">
+                        <div class="self-stretch h-7 relative">
+                            <div class="w-96 left-0 top-0 absolute text-center justify-start text-black text-xl font-semibold font-['Inter'] leading-normal">Pitch Deck & Storytelling</div>
+                        </div>
+                    </div>
+                    <div class="self-stretch h-16 pt-1.5 flex flex-col justify-center items-start gap-2.5">
+                        <div class="w-[500px] h-16 pb-6 inline-flex justify-center items-start gap-2.5">
+                            <div class="w-[460px] text-center justify-start text-zinc-700 text-sm font-normal font-['Inter'] leading-tight">Develop persuasive presentations that showcase your business potential and make a strong case for investment.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[539px] bg-white rounded-[10px] outline outline-1 outline-offset-[-1px] outline-emerald-800/10 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+                <div class="w-[530px] h-32 p-2.5 bg-white inline-flex justify-center items-start gap-2.5 overflow-hidden">
+                    <img class="h-[110px]" src="assets/icons/notebook_pen.svg" />                    
+                </div>
+                <div class="w-96 h-px pb-6"></div>
+                <div class="self-stretch px-7 py-5 bg-white flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+                    <div class="w-96 flex flex-col justify-center items-start gap-2.5">
+                        <div class="self-stretch h-7 relative">
+                            <div class="w-96 left-0 top-0 absolute text-center justify-start text-black text-xl font-semibold font-['Inter'] leading-normal">Secure Data Room for Due Diligence</div>
+                        </div>
+                    </div>
+                    <div class="self-stretch h-16 pt-1.5 flex flex-col justify-center items-start gap-2.5">
+                        <div class="w-[500px] h-16 pb-6 inline-flex justify-center items-start gap-2.5">
+                            <div class="w-[460px] text-center justify-start text-zinc-700 text-sm font-normal font-['Inter'] leading-tight">A Get expert guidance on structuring your financials, refining your pitch, and preparing investor-ready documents.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[539px] bg-white rounded-[10px] outline outline-1 outline-offset-[-1px] outline-emerald-800/10 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+                <div class="w-[530px] h-32 p-2.5 bg-white inline-flex justify-center items-start gap-2.5 overflow-hidden">
+                    <img class="h-[110px]" src="assets/icons/notebook_pen.svg" />                    
+                </div>
+                <div class="w-96 h-px pb-6"></div>
+                <div class="self-stretch px-7 py-5 bg-white flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+                    <div class="w-96 flex flex-col justify-center items-start gap-2.5">
+                        <div class="self-stretch h-7 relative">
+                            <div class="w-96 left-0 top-0 absolute text-center justify-start text-black text-xl font-semibold font-['Inter'] leading-normal">Growth Strategy & Scaling Support</div>
+                        </div>
+                    </div>
+                    <div class="self-stretch h-16 pt-1.5 flex flex-col justify-center items-start gap-2.5">
+                        <div class="w-[500px] h-16 pb-6 inline-flex justify-center items-start gap-2.5">
+                            <div class="w-[460px] text-center justify-start text-zinc-700 text-sm font-normal font-['Inter'] leading-tight">A Get expert guidance on structuring your financials, refining your pitch, and preparing investor-ready documents.<br/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[539px] bg-white rounded-[10px] outline outline-1 outline-offset-[-1px] outline-emerald-800/10 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+                <div class="w-[530px] h-32 p-2.5 bg-white inline-flex justify-center items-start gap-2.5 overflow-hidden">
+                    <img class="h-[110px]" src="assets/icons/notebook_pen.svg" />                  
+                </div>
+                <div class="w-96 h-px pb-6"></div>
+                <div class="self-stretch px-7 py-5 bg-white flex flex-col justify-start items-center gap-2.5 overflow-hidden">
+                    <div class="w-96 flex flex-col justify-center items-start gap-2.5">
+                        <div class="self-stretch h-7 relative">
+                            <div class="w-96 left-0 top-0 absolute text-center justify-start text-black text-xl font-semibold font-['Inter'] leading-normal"> Investor Database Access</div>
+                        </div>
+                    </div>
+                    <div class="self-stretch h-16 pt-1.5 flex flex-col justify-center items-start gap-2.5">
+                        <div class="w-[500px] h-16 pb-6 inline-flex justify-center items-start gap-2.5">
+                            <div class="w-[460px] text-center justify-start text-zinc-700 text-sm font-normal font-['Inter'] leading-tight">Explore a curated list of investors before signing up and find those aligned with your industry and growth stage.<br/></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section4" class="md:h-[650px] py-16 md:py-30">
+        <div class="bg-[#447468] rounded-2xl h-auto md:h-[473px] mt-[1cm] md:mt-[1.5cm] px-4 mx-auto w-[90%] lg:w-[1708px] py-12 md:py-24 transition-all hover:shadow-xl">
+            <h1 class="text-center leading-[1.2] md:leading-[70px] text-[#FFFFFF] tracking-[-1.2px] font-inter font-medium text-[32px] md:text-[60px]">See who's ready to invest in you!</h1>
+            <button class="mt-[40px] md:mt-[60px] flex justify-center items-center px-[38px] py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] bg-[#FCBA05] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate mx-auto transition-all hover:bg-[#e6a800]">Find Businesses<span class="ml-2"><img src="./assets/icons/arrow-right.svg" class="w-4 h-4 inline"></span></button>
+        </div>
+    </div>
+
+
+    <div class="w-[1894px] h-[740px]  bg-white inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+        <div class="self-stretch h-[650px] relative">
+            <div class="w-[1708px] h-[473px] left-[110px] top-[9px] absolute bg-CAPITAL-GREEN-75 rounded-3xl overflow-hidden">
+                <div class="w-[1192px] px-8 py-20 left-[258px] top-[-36.50px] absolute inline-flex flex-col justify-center items-center gap-2.5 overflow-hidden">
+                    <div class="self-stretch h-96 flex flex-col justify-center items-center gap-8 overflow-hidden">
+                        <div class="w-[1128px] h-80 flex flex-col justify-center items-center gap-6 overflow-hidden">
+                            <div class="self-stretch h-36 py-2 inline-flex justify-center items-center gap-2.5">
+                                <div class="w-[913px] h-44 text-center justify-center text-white text-6xl font-medium font-['Poppins'] leading-[60px]">See Who’s Ready to Invest in You</div>
+                            </div>
+                            <div data-icon="yes" data-state="Default" class="w-72 inline-flex justify-start items-start">
+                                <div class="flex-1 h-14 px-9 py-5 bg-CAPITAL-YELLOW rounded-tr-[10px] rounded-bl-[10px] rounded-br-[10px] flex justify-center items-center gap-2.5 overflow-hidden">
+                                    <div class="justify-center text-white text-sm font-semibold font-['Inter'] leading-normal">Explore Investors Now</div>
+                                    <div data-name="arrow-right" class="w-6 h-6 relative overflow-hidden">
+                                        <div class="w-2 h-3.5 left-[12.25px] top-[5.27px] absolute bg-white"></div>
+                                        <div class="w-4 h-[1.50px] left-[4.25px] top-[11.25px] absolute bg-white"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+
+    <div class="self-stretch h-[675px] relative">
+        <div class="w-[628.61px] h-[487.65px] left-[241.39px] top-[36px] absolute bg-white"></div>
+        <div class="w-56 h-6 left-[1675.84px] top-[571.80px] absolute text-center justify-start text-white text-sm font-normal font-['Poppins'] uppercase leading-tight tracking-tight">More About Us</div>
+        <div class="w-[991.42px] h-[639px] left-0 top-[36px] absolute"></div>
+        <div class="w-[815.23px] h-[642px] left-[807.36px] top-[12px] absolute">
+            <div class="w-[564px] h-36 left-[106.57px] top-[-33px] absolute justify-center text-emerald-950 text-4xl font-medium font-['Poppins'] leading-[50px]">Know Your Worth – Get an Accurate Business Valuation</div>
+            <div class="w-[564px] h-14 left-[103px] top-[316px] absolute justify-center text-emerald-950 text-2xl font-medium font-['Poppins'] leading-[50px]"> Why Use Our Valuation Tool?</div>
+            <div class="w-[504px] h-64 left-[96px] top-[390px] absolute overflow-hidden">
+                <div class="w-16 h-20 left-0 top-0 absolute overflow-hidden">
+                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                        <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                            <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-80 h-5 left-[32px] top-0 absolute justify-center text-emerald-950 text-xl font-medium font-['Inter'] leading-normal"> Market-Driven Insights</div>
+                <div class="w-16 h-20 left-0 top-[48px] absolute overflow-hidden">
+                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                        <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                            <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[463px] h-5 left-[32px] top-[48px] absolute justify-center text-emerald-950 text-xl font-medium font-['Inter'] leading-tight">Objective & Impartial</div>
+                <div class="w-8 h-9 left-0 top-[96px] absolute overflow-hidden">
+                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                        <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                            <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-[454px] h-5 left-[32px] top-[96px] absolute justify-center text-emerald-950 text-xl font-medium font-['Inter'] leading-normal">Investor-Ready Reports</div>
+            </div>
+            <div class="w-[721px] pb-2 left-[108px] top-[124px] absolute inline-flex justify-start items-start gap-2.5">
+                <div class="w-[732px] justify-start text-black text-2xl font-normal font-['Poppins'] leading-9">Determine a fair valuation for your business using industry-leading methodologies and real market data. Our automated tool ensures an impartial and data-driven valuation to help you make informed investment decisions.</div>
+            </div>
+        </div>
+        <img class="w-[553.65px] h-[560px] left-[157.34px] top-0 absolute" src="assets/images/handGraph.png" />
+    </div>
+
+
+
+
+
+
+
+
+    <div class="w-[1914px] h-[1579px] p-24 inline-flex flex-col justify-start items-start gap-2.5 overflow-hidden">
+        <div class="w-[1744px] h-44 relative">
+            <div class="w-72 h-5 left-0 top-[27.52px] absolute justify-center text-zinc-700 text-lg font-medium font-['Inter'] leading-normal">Success Stories</div>
+            <div class="w-[1744px] h-32 left-[-9px] top-[38px] absolute overflow-hidden">
+                <div class="w-[977px] h-24 left-[8px] top-[-1px] absolute justify-center text-zinc-900 text-4xl font-medium font-['Inter'] leading-[60px]">See how we’ve helped other Businesess succeed</div>
+            </div>
+        </div>
+        <div class="w-[1917px] h-[1119px] py-2.5 bg-white inline-flex justify-start items-start gap-2.5 overflow-hidden">
+            <div class="w-[534px] h-[1007px] px-6 py-8 bg-stone-50 inline-flex flex-col justify-start items-center gap-2.5">
+                <div class="self-stretch h-[904px] flex flex-col justify-start items-start gap-5">
+                    <img class="w-[483px] h-[483px]" src="assets/images/eat_green.png" />
+                    <div class="self-stretch h-96 px-5 py-7 bg-white flex flex-col justify-start items-start gap-2.5">
+                        <div class="self-stretch flex flex-col justify-center items-start">
+                            <div class="self-stretch pb-2 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start text-black text-2xl font-bold font-['Inter'] leading-7">Eat Greens</div>
+                            </div>
+                            <div class="self-stretch h-16 pb-6 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start text-zinc-700 text-sm font-normal font-['Inter'] leading-tight">A Kenyan agribusiness specializing in organic produce, committed to sustainable farming and empowering smallholder farmers.<br/></div>
+                            </div>
+                            <div class="w-12 h-[3px] relative bg-amber-300"></div>
+                            <div class="self-stretch pt-6 pb-5 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start"><span class="text-neutral-500 text-base font-normal font-['Inter'] leading-tight">Capital Connect helped us refine our financials and connect with the right investors. Within months, we secured the funding we needed to scale our organic farming operations nationwide!  – </span><span class="text-neutral-500 text-base font-bold font-['Inter'] leading-tight">Jane Mwangi, Founder</span></div>
+                            </div>
+                        </div>
+                        <div class="w-[504px] h-64 relative overflow-hidden">
+                            <div class="w-16 h-20 left-0 top-0 absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-80 h-5 left-[32px] top-0 absolute justify-center text-CAPITAL-GREEN-75 text-2xl font-semibold font-['Inter'] leading-normal">KES 20M Raised</div>
+                            <div class="w-16 h-20 left-0 top-[48px] absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[463px] h-5 left-[32px] top-[48px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-tight">Investment Readiness Advisory</div>
+                            <div class="w-8 h-9 left-0 top-[96px] absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[454px] h-5 left-[32px] top-[96px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-normal">Matched with Impact Investors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[534px] h-[1007px] px-6 py-8 bg-stone-50 inline-flex flex-col justify-start items-center gap-2.5">
+                <div class="self-stretch h-[904px] flex flex-col justify-start items-start gap-5">
+                    <img class="w-[483px] h-[483px]" src="assets/images/eat_green.png" />                   
+                    <div class="self-stretch h-96 px-5 py-7 bg-white flex flex-col justify-start items-start gap-2.5">
+                        <div class="self-stretch flex flex-col justify-center items-start">
+                            <div class="self-stretch pb-2 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start text-black text-2xl font-bold font-['Inter'] leading-7">Eat Greens</div>
+                            </div>
+                            <div class="self-stretch h-16 pb-6 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start text-zinc-700 text-sm font-normal font-['Inter'] leading-tight">A Kenyan agribusiness specializing in organic produce, committed to sustainable farming and empowering smallholder farmers.<br/></div>
+                            </div>
+                            <div class="w-12 h-[3px] relative bg-amber-300"></div>
+                            <div class="self-stretch pt-6 pb-5 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start"><span class="text-neutral-500 text-base font-normal font-['Inter'] leading-tight">Capital Connect helped us refine our financials and connect with the right investors. Within months, we secured the funding we needed to scale our organic farming operations nationwide!  – </span><span class="text-neutral-500 text-base font-bold font-['Inter'] leading-tight">Jane Mwangi, Founder</span></div>
+                            </div>
+                        </div>
+                        <div class="w-[504px] h-64 relative overflow-hidden">
+                            <div class="w-16 h-20 left-0 top-0 absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-80 h-5 left-[32px] top-0 absolute justify-center text-CAPITAL-GREEN-75 text-2xl font-semibold font-['Inter'] leading-normal">KES 20M Raised</div>
+                            <div class="w-16 h-20 left-0 top-[48px] absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[463px] h-5 left-[32px] top-[48px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-tight">Investment Readiness Advisory</div>
+                            <div class="w-8 h-9 left-0 top-[96px] absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[454px] h-5 left-[32px] top-[96px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-normal">Matched with Impact Investors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[534px] h-[1007px] px-6 py-8 bg-stone-50 inline-flex flex-col justify-start items-center gap-2.5">
+                <div class="self-stretch h-[904px] flex flex-col justify-start items-start gap-5">
+                    <img class="w-[483px] h-[483px]" src="assets/images/eat_green.png" />                    
+                    <div class="self-stretch h-96 px-5 py-7 bg-white flex flex-col justify-start items-start gap-2.5">
+                        <div class="self-stretch flex flex-col justify-center items-start">
+                            <div class="self-stretch pb-2 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start text-black text-2xl font-bold font-['Inter'] leading-7">Eat Greens</div>
+                            </div>
+                            <div class="self-stretch h-16 pb-6 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start text-zinc-700 text-sm font-normal font-['Inter'] leading-tight">A Kenyan agribusiness specializing in organic produce, committed to sustainable farming and empowering smallholder farmers.<br/></div>
+                            </div>
+                            <div class="w-12 h-[3px] relative bg-amber-300"></div>
+                            <div class="self-stretch pt-6 pb-5 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start"><span class="text-neutral-500 text-base font-normal font-['Inter'] leading-tight">Capital Connect helped us refine our financials and connect with the right investors. Within months, we secured the funding we needed to scale our organic farming operations nationwide!  – </span><span class="text-neutral-500 text-base font-bold font-['Inter'] leading-tight">Jane Mwangi, Founder</span></div>
+                            </div>
+                        </div>
+                        <div class="w-[504px] h-64 relative overflow-hidden">
+                            <div class="w-16 h-20 left-0 top-0 absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-80 h-5 left-[32px] top-0 absolute justify-center text-CAPITAL-GREEN-75 text-2xl font-semibold font-['Inter'] leading-normal">KES 20M Raised</div>
+                            <div class="w-16 h-20 left-0 top-[48px] absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[463px] h-5 left-[32px] top-[48px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-tight">Investment Readiness Advisory</div>
+                            <div class="w-8 h-9 left-0 top-[96px] absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[454px] h-5 left-[32px] top-[96px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-normal">Matched with Impact Investors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-[534px] h-[1007px] px-6 py-8 bg-stone-50 inline-flex flex-col justify-start items-center gap-2.5">
+                <div class="self-stretch h-[904px] flex flex-col justify-start items-start gap-5">
+                    <img class="w-[483px] h-[483px]" src="assets/images/eat_green.png" />                    
+                    <div class="self-stretch h-96 px-5 py-7 bg-white flex flex-col justify-start items-start gap-2.5">
+                        <div class="self-stretch flex flex-col justify-center items-start">
+                            <div class="self-stretch pb-2 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start text-black text-2xl font-bold font-['Inter'] leading-7">Eat Greens</div>
+                            </div>
+                            <div class="self-stretch h-16 pb-6 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start text-zinc-700 text-sm font-normal font-['Inter'] leading-tight">A Kenyan agribusiness specializing in organic produce, committed to sustainable farming and empowering smallholder farmers.<br/></div>
+                            </div>
+                            <div class="w-12 h-[3px] relative bg-amber-300"></div>
+                            <div class="self-stretch pt-6 pb-5 inline-flex justify-start items-start gap-2.5">
+                                <div class="flex-1 justify-start"><span class="text-neutral-500 text-base font-normal font-['Inter'] leading-tight">Capital Connect helped us refine our financials and connect with the right investors. Within months, we secured the funding we needed to scale our organic farming operations nationwide!  – </span><span class="text-neutral-500 text-base font-bold font-['Inter'] leading-tight">Jane Mwangi, Founder</span></div>
+                            </div>
+                        </div>
+                        <div class="w-[504px] h-64 relative overflow-hidden">
+                            <div class="w-16 h-20 left-0 top-0 absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-80 h-5 left-[32px] top-0 absolute justify-center text-CAPITAL-GREEN-75 text-2xl font-semibold font-['Inter'] leading-normal">KES 20M Raised</div>
+                            <div class="w-16 h-20 left-0 top-[48px] absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[463px] h-5 left-[32px] top-[48px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-tight">Investment Readiness Advisory</div>
+                            <div class="w-8 h-9 left-0 top-[96px] absolute overflow-hidden">
+                                <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                    <div class="w-6 h-6 left-0 top-0 absolute overflow-hidden">
+                                        <div class="w-3.5 h-3.5 left-[4.75px] top-[4.75px] absolute outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[454px] h-5 left-[32px] top-[96px] absolute justify-center text-emerald-950 text-sm font-medium font-['Inter'] leading-normal">Matched with Impact Investors</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[1906px] h-32 py-7 bg-white inline-flex justify-start items-center gap-2.5 overflow-hidden">
+            <div class="w-[1879px] h-1.5 bg-violet-100 rounded-sm"></div>
+            <div class="w-44 h-1.5 bg-amber-300 rounded-sm"></div>
+        </div>
+    </div>
+
+
+    <div id="section6" class="h-auto md:h-[740px] py-16 md:py-20 ">        
+        <div class="bg-[#FCBA05] rounded-2xl h-auto md:h-[568px] px-4 mx-auto w-[90%] lg:w-[1708px] py-12 md:py-24 transition-all hover:shadow-xl">
+            <h1 class="text-center leading-[1.2] md:leading-[70px] text-[#064635] tracking-[-1.2px] font-inter font-medium text-[32px] md:text-[60px]">Ready to secure funding?</h1>
+            <p class="text-center text-[#000000] mt-6 leading-[1.5] md:leading-[41px] tracking-[-0.18px] font-inter text-[18px] md:text-[20px] font-normal not-italic">Take the next step toward securing the funding your business needs. Whether you're <br/>ready to start now or prefer a one-on-one consultation, we've got you covered.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-6 mt-8 md:mt-[60px]">
+                <button class="leading-[24px] font-semibold text-[14px] bg-[#FFFFFF] text-[#064635] flex justify-center items-center px-[24px] md:px-[38px] py-[16px] md:py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#f0f0f0]">Start Preparing Today<span class="ml-2"><img src="./assets/icons/arrow-right.svg" class="w-4 h-4 inline"></span></button>
+                <button class="leading-[24px] font-semibold text-[14px] bg-[#FFFFFF] text-[#064635] flex justify-center items-center px-[24px] md:px-[38px] py-[16px] md:py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#f0f0f0]">Book a Call
+                    <span class="ml-2"><img src="./assets/icons/arrow-right.svg" class="w-4 h-4 inline"></span></button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer" class="h-auto md:h-[680px] bg-[#000000]">
+        <div class="text-start md:grid md:grid-cols-5  md:px-4 md:mx-auto w-[90%] lg:w-[1708px] md:p-5 p-15 md:py-12 md:py-20 gap-8 md:gap-0 ">
+            <div class="md:col-span-1 flex md:justify-center md:block mb-10 md:mb-0"><img src="./assets/images/logo_black.png" class="w-40 md:w-auto transition-transform hover:scale-105"></div>
+            <div class="md:col-span-1">
+                <p class="text-[#B4B6C4] text-[14px]  md:text-[16px] font-chivo md:text-center md:text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quas error rem voluptates</p>
+                
+                
+                <p class="text-[#B4B6C4] text-[16px] font-chivo mt-4 text-center text-start md:text-left flex items-center gap-2">
+                    <img src="./assets/icons/phone.svg" class="w-5 h-5"> +254715501703
+                  </p>
+                  
+                  <p class="text-[#B4B6C4] text-[16px] font-chivo text-center text-start md:text-left flex items-center gap-2">
+                    <img src="./assets/icons/mail.svg" class="w-5 h-5"> services@capitalconnect.africa
+                  </p>
+                  
+                
+           
+                <ul class="flex justify-start md:justify-start gap-4 mt-8 md:mt-28 md:hidden">
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/bx_bxl-instagram-alt.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_twitter-fill.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_linkedin-fill.png"></li>
+                </ul>
+                <p class="text-xs mt-4 md:mt-17 text-[#B4B6C4] font-chivo text-center md:text-left text-start">@All Rights Reserved</p>
+            </div>
+            <div class="hidden md:block md:col-span-1">
+                <h1 class="font-bold text-[16px] font-inter leading-[20px] tracking-[0px] mb-3 text-center md:text-left">Benefits</h1>
+                <ul class="text-center md:text-left">
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">For Entrepreneurs</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">For Investors</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">For Advisors</li>
+                </ul>
+            </div>
+            <div class="hidden md:block md:col-span-1">
+                <h1 class="font-bold text-[16px] font-inter leading-[20px] tracking-[0px] mb-3 text-center md:text-left">About</h1>
+                <ul class="text-center md:text-left">
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Our Team</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Careers</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Contact Us</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Support</li>
+                </ul>
+            </div>
+            <div class="hidden md:block md:col-span-1">
+                <h1 class="font-bold text-[16px] font-inter leading-[20px] tracking-[0px] mb-3 text-center md:text-left">Resources</h1>
+                <ul class="text-center md:text-left">
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Disclaimer</li>
+                    <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Terms</li>
+                </ul>
+                <ul class="flex justify-center md:justify-start gap-4 mt-8 md:mt-28">
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/bx_bxl-instagram-alt.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_twitter-fill.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_linkedin-fill.png"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+</body>

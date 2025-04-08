@@ -5,63 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Connect</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-        li{
-            cursor: pointer;
-        }
-        .animate-fadeInUp { animation: fadeInUp 0.8s ease-out forwards; }
-        .animate-fadeIn { animation: fadeIn 0.8s ease-out forwards; }
-        .scroll-section { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
-        .scroll-section.visible { opacity: 1; transform: translateY(0); }
-        a, .nav-item, .clickable { transition: all 0.3s ease; }
-        a:hover, .nav-item:hover { color: #FCBA05; transform: translateY(-2px); }
-        button:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-5px); box-shadow: 0 15px 30px rgba(0,0,0,0.15) !important; }
-        .learn-more:hover { color: #FCBA05 !important; }
-        .learn-more:hover img { transform: translateX(3px); }
-        .mobile-menu { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; }
-        .mobile-menu.open { max-height: 500px; }
-        .scrollable-container { width: 100%; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch; scrollbar-width: none; display: flex; flex-wrap: nowrap; padding-bottom: 20px; }
-        .scrollable-container::-webkit-scrollbar { display: none; }
-        .scrollable-item { flex: 0 0 auto; scroll-snap-align: start; margin-right: 1.5rem; }
-        @media (max-width: 1024px) {
-            .hero-title { font-size: 2.5rem !important; line-height: 3rem !important; }
-            .hero-subtitle { font-size: 1rem !important; line-height: 1.5rem !important; padding: 0 1rem; }
-            .feature-card { width: 100% !important; margin-right: 0 !important; margin-bottom: 1rem; }
-            .dual-column { flex-direction: column !important; }
-            .dual-column > div { width: 100% !important; margin-bottom: 2rem; }
-            .section-padding { padding-left: 1.5rem !important; padding-right: 1.5rem !important; }
-            .mobile-stack { flex-direction: column !important; }
-            .mobile-center { text-align: center !important; }
-            .mobile-px-4 { padding-left: 1rem !important; padding-right: 1rem !important; }
-            .mobile-py-8 { padding-top: 2rem !important; padding-bottom: 2rem !important; }
-            .mobile-w-full { width: 100% !important; }
-            .mobile-mt-4 { margin-top: 1rem !important; }
-        }
-        @media (max-width: 768px) {
-            .scrollable-container { flex-direction: column; overflow-x: hidden; overflow-y: visible; scroll-snap-type: none; padding-bottom: 0; }
-            .scrollable-item { width: 100% !important; margin-right: 0 !important; margin-bottom: 1.5rem; }
-            .mobile-hidden { display: none !important; }
-            .mobile-block { display: block !important; }
-            .mobile-flex-col { flex-direction: column !important; }
-            .mobile-text-center { text-align: center !important; }
-            .mobile-p-4 { padding: 1rem !important; }
-            .mobile-mx-auto { margin-left: auto !important; margin-right: auto !important; }
-            .mobile-w-90 { width: 90% !important; }
-            .mobile-h-auto { height: auto !important; }
-            .mobile-pt-12 { padding-top: 3rem !important; }
-            .mobile-pb-12 { padding-bottom: 3rem !important; }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body class="font-inter text-white overflow-auto [&::-webkit-scrollbar]:hidden">
     <div class="fixed top-0 right-0 z-50 p-4 md:hidden">
@@ -73,7 +17,7 @@
     </div>
     <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-full bg-[#064635] z-40 pt-16">
         <ul class="flex flex-col items-center py-4">
-            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20">For Businesses</li>
+            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="businesses.html">For Businesses</a></li>
             <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20">For Investors</li>
             <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20">For Resources</li>
             <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20">Pricing</li>
@@ -86,9 +30,9 @@
     <div id="section1" class="bg-[#064635] h-auto md:h-[864px] w-full">
         <nav class="p-6 md:p-10">
             <div class="flex flex-row justify-between items-center">
-                <div class="animate-fadeIn relative z-50"><img src="./assets/logo.png" class="w-30 md:w-auto"></div>
+                <div class="animate-fadeIn relative z-50"><img src="./assets/images/logo.png" class="w-30 md:w-auto"></div>
                 <ul class="hidden md:flex">
-                    <li class="font-semi-bold py-1 px-4 font-poppins nav-item">For Businesses</li>
+                    <li class="font-semi-bold py-1 px-4 font-poppins nav-item"><a href="businesses.html">For Businesses</a></li>
                     <li class="font-semi-bold py-1 px-4 nav-item">For Investors</li>
                     <li class="font-semi-bold py-1 px-4 nav-item">For Resources</li>
                     <li class="font-semi-bold py-1 px-4 nav-item">Pricing</li>
@@ -107,7 +51,7 @@
             <div class="flex flex-col md:flex-row justify-around mobile-px-4 gap-2">
                 <div class="p-4 md:p-5 text-start mobile-w-full bg-white rounded-2xl">
                     <div class="flex flex-col md:flex-row justify-evenly gap-4 md:gap-10">
-                        <div class="flex justify-center md:block"><img src="./assets/Background.png" class="w-12 md:w-auto"></div>
+                        <div class="flex justify-center md:block"><img src="./assets/images/Background.png" class="w-12 md:w-auto"></div>
                         <div class="mt-4 md:mt-0">
                             <h6 class="text-[#060B13] leading-[1.5rem] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[1.2rem] md:text-[21.9375px] mb-2">For Business</h6>
                             <p class="leading-[1.2rem] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[0.9rem] md:text-[12.94px] font-medium mb-3 font-inter">Explore a curated list of investors <span class="hidden md:block">actively seeking businesses <br/>like yours. Get the insights you need to connect, pitch, and <br/>secure funding—faster.</span></p>
@@ -119,11 +63,11 @@
 
                 <div class="p-4 md:p-5 text-start mt-6 md:mt-0 mobile-w-full bg-white rounded-2xl">
                     <div class="flex flex-col md:flex-row justify-evenly gap-4 md:gap-10">
-                        <div class="flex justify-center md:block"><img src="./assets/Background.svg" class="w-12 md:w-auto"></div>
+                        <div class="flex justify-center md:block"><img src="./assets/icons/Background.svg" class="w-12 md:w-auto"></div>
                         <div class="mt-4 md:mt-0">
                             <h6 class="text-[#060B13] leading-[1.5rem] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[1.2rem] md:text-[21.9375px] mb-2">For Investors</h6>
                             <p class="leading-[1.2rem] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[0.9rem] md:text-[12.94px] font-medium mb-3 font-inter">Get exclusive access to vetted startups <span class="hidden md:block">that align with your<br/> investment goals. Explore structured business data, financial <br/>insights, and promising opportunities—all in one place.</span></p>
-                            <p class="text-[#979FB4] leading-[1.5rem] md:leading-[29px] tracking-[-0.47px] text-[0.9rem] md:text-[14px] font-inter flex items-center justify-center md:justify-start learn-more cursor-pointer">Learn More<span class="ml-2"><img src="./assets/arrow-right.svg" class="w-4 h-4 inline transition-transform"></span></p>
+                            <p class="text-[#979FB4] leading-[1.5rem] md:leading-[29px] tracking-[-0.47px] text-[0.9rem] md:text-[14px] font-inter flex items-center justify-center md:justify-start learn-more cursor-pointer">Learn More<span class="ml-2"><img src="./assets/icons/arrow-right.svg" class="w-4 h-4 inline transition-transform"></span></p>
                         </div>
                     </div>
                 </div>
@@ -136,28 +80,28 @@
         <p class="tracking-[-0.33px] text-[#363D4F] text-center leading-[26px] md:leading-[40px] mt-[1cm] md:mt-[4cm] tracking-[-0.33px] text-[17px] md:text-[20px] font-normal scroll-section">Join 100+ businesses and investors who <br class="md:hidden"/> trust Capital Connect for smarter funding<br class="md:hidden"/> solutions.</p>
         <div class="horizontal-scroll overflow-x-hidden">
             <ul class="flex justify-evenly mt-[1.5cm] px-4 min-w-max md:min-w-0">
-                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/deloitte.svg"></li>
-                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/deloitte.svg"></li>
-                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/deloitte.svg"></li>
-                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/deloitte.svg"></li>
-                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/deloitte.svg"></li>
-                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/deloitte.svg"></li>
-                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/deloitte.svg"></li>
-                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/deloitte.svg"></li>
-                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/deloitte.svg"></li>
+                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/images/deloitte.svg"></li>
+                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/images/deloitte.svg"></li>
+                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/images/deloitte.svg"></li>
+                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/images/deloitte.svg"></li>
+                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/images/deloitte.svg"></li>
+                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/images/deloitte.svg"></li>
+                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/images/deloitte.svg"></li>
+                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/images/deloitte.svg"></li>
+                <li class="scroll-item"><img class="h-[18px] md:h-[24px] w-[92px]" src="./assets/images/deloitte.svg"></li>
             </ul>
         </div>
         <div class="flex flex-col md:flex-row mt-[2cm] mb-[1cm] justify-around scroll-section">
-            <div><img src="./assets/hr-manager-welcoming-successful-candidate__2_-removebg-preview 1.png" class="transition-transform hover:scale-105 w-full  mx-auto"></div>
+            <div><img src="./assets/images/hr-manager-welcoming-successful-candidate__2_-removebg-preview 1.png" class="transition-transform hover:scale-105 w-full  mx-auto"></div>
             <div class="mt-[1cm] md:mt-[3cm] px-4 md:px-0">
                 <p class="text-[#3C4049] leading-[23.8px] mb-4 font-inter font-medium text-[13px] md:text-[19px] tracking-[-0.08px]">For Businesses & Startups</p>
                 <h2 class="text-[#002E25] leading-[1.2] tracking-[-1.2px] text-[21px] md:text-[40px] font-inter font-medium">Get Investor-Ready & Unlock Growth</h2>
                 <ul class="mt-[1.2cm]">
-                    <li class="text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/check.svg"></span>Streamline your investment readiness process</li>
-                    <li class="mt-[15px] text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/check.svg"></span>Get expert support in structuring financials & <br class="md:hidden"/>business documents</li>
-                    <li class="mt-[15px] text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/check.svg"></span>Connect with the right investors looking for opportunities like yours</li>
+                    <li class="text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/icons/check.svg"></span>Streamline your investment readiness process</li>
+                    <li class="mt-[15px] text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/icons/check.svg"></span>Get expert support in structuring financials & <br class="md:hidden"/>business documents</li>
+                    <li class="mt-[15px] text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/icons/check.svg"></span>Connect with the right investors looking for opportunities like yours</li>
                 </ul>
-                <button class="mt-[40px] md:mt-[60px] flex justify-center items-center px-[38px] py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] bg-[#FCBA05] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#e6a800]">Get Started<span class="ml-2"><img src="./assets/PrimeNG Icons v5.0.0.png" class="w-6 h-5 inline"></span></button>
+                <button class="mt-[40px] md:mt-[60px] flex justify-center items-center px-[38px] py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] bg-[#FCBA05] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#e6a800]">Get Started<span class="ml-2"><img src="./assets/icons/PrimeNG Icons v5.0.0.png" class="w-6 h-5 inline"></span></button>
             </div>
         </div>
     </div>
@@ -167,20 +111,20 @@
             <p class="text-[#3C4049] leading-[23.8px] mb-4 font-inter font-medium text-[13px] md:text-[19px] tracking-[-0.08px]">For Investors</p>
             <h1 class="text-[#002E25] leading-[1.2] tracking-[-1.2px] text-[21px] md:text-[40px] font-inter font-medium">Discover & Invest in High-Potential <br />Businesses</h1>
             <ul class="mt-[1cm]"> 
-                <li class="text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/check.svg"></span>Find vetted, investment-ready businesses</li>
-                <li class="mt-[15px] text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/check.svg"></span>Access structured financial data & insights for informed decision</li>
-                <li class="mt-[15px] text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/check.svg"></span>Invest with confidence through a seamless, data-driven platform</li>
+                <li class="text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/icons/check.svg"></span>Find vetted, investment-ready businesses</li>
+                <li class="mt-[15px] text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/icons/check.svg"></span>Access structured financial data & insights for informed decision</li>
+                <li class="mt-[15px] text-[#002E25] leading-[23.8px] tracking-[-0.08px] text-[14px] font-inter font-medium flex items-center"><span class="inline"><img src="./assets/icons/check.svg"></span>Invest with confidence through a seamless, data-driven platform</li>
             </ul>
-            <button class="mt-[40px] md:mt-[60px] flex justify-center items-center px-[38px] py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] bg-[#FCBA05] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#e6a800]">Get Started<span class="ml-2"><img src="./assets/PrimeNG Icons v5.0.0.png" class="w-6 h-5 inline"></span></button>
+            <button class="mt-[40px] md:mt-[60px] flex justify-center items-center px-[38px] py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] bg-[#FCBA05] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#e6a800]">Get Started<span class="ml-2"><img src="./assets/icons/PrimeNG Icons v5.0.0.png" class="w-6 h-5 inline"></span></button>
         </div>
-        <div class="order-1 md:order-2 flex justify-center"><img src="./assets/WzWGW3CgEZyoaUVrXzt0bW9FU.png-removebg-preview 1.png" class="hidden md:block max-w-md md:max-w-none transition-transform hover:scale-105"></div>
+        <div class="order-1 md:order-2 flex justify-center"><img src="./assets/images/WzWGW3CgEZyoaUVrXzt0bW9FU.png-removebg-preview 1.png" class="hidden md:block max-w-md md:max-w-none transition-transform hover:scale-105"></div>
     </div>
 
     <div id="section4" class="h-auto md:h-[740px] py-16 md:py-30 scroll-section">
         <div class="bg-[#447468] rounded-2xl h-auto md:h-[473px] mt-[1cm] md:mt-[1.5cm] px-4 mx-auto w-[90%] lg:w-[1708px] py-12 md:py-24 transition-all hover:shadow-xl">
             <h1 class="text-center leading-[1.2] md:leading-[70px] text-[#FFFFFF] tracking-[-1.2px] font-inter font-medium text-[32px] md:text-[60px]">See who's ready to invest in you!</h1>
             <p class="text-center mt-6 leading-[1.5] md:leading-[24px] tracking-[-0.18px] font-inter text-[18px] md:text-[20px] font-normal not-italic">Before committing, get a sneak peek at investors interested in <br/> your industry. See who's actively investing in startups and SMEs like yours</p>
-            <button class="mt-[40px] md:mt-[60px] flex justify-center items-center px-[38px] py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] bg-[#FCBA05] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate mx-auto transition-all hover:bg-[#e6a800]">Find Businesses<span class="ml-2"><img src="./assets/arrow-right.svg" class="w-4 h-4 inline"></span></button>
+            <button class="mt-[40px] md:mt-[60px] flex justify-center items-center px-[38px] py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] bg-[#FCBA05] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate mx-auto transition-all hover:bg-[#e6a800]">Find Businesses<span class="ml-2"><img src="./assets/icons/arrow-right.svg" class="w-4 h-4 inline"></span></button>
         </div>
     </div>
 
@@ -190,28 +134,28 @@
             <h1 class="text-[32px] md:text-[40px] font-inter font-medium leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[#002E25] scroll-section">Discover the Power of Capital Connect for Founders</h1>
             <div class="scrollable-container mt-8 md:mt-12 p-2 md:p-4">
                 <div class="scrollable-item w-[85vw] md:w-[409.22px] h-[337px] bg-white shadow-[0px_4.32476px_64.8715px_rgba(0,0,0,0.08)] text-center py-12 md:py-16 card-hover">
-                    <img src="./assets/decks.png" class="mx-auto w-12 mb-5">
+                    <img src="./assets/icons/decks.png" class="mx-auto w-12 mb-5">
                     <p class="text-[#141F39] font-medium font-inter leading-[1.2] md:leading-[44px] tracking-[-1px] text-[21px]">Decks</p>
                     <p class="text-[#4F4F4F] leading-[1.5] md:leading-[32px] tracking-[0px] text-[16px] md:text-[18px] font-normal not-italic px-4">Pitch deck sharing purpose-built to control your fundraising narrative.</p>                                        
                 </div>
                 <div class="scrollable-item w-[85vw] md:w-[409.22px] h-[337px] bg-white shadow-[0px_4.32476px_64.8715px_rgba(0,0,0,0.08)] text-center py-12 md:py-16 card-hover">
-                    <img src="./assets/decks.png" class="mx-auto w-12 mb-5">
+                    <img src="./assets/icons/decks.png" class="mx-auto w-12 mb-5">
                     <p class="text-[#141F39] font-medium font-inter leading-[1.2] md:leading-[44px] tracking-[-1px] text-[21px]">Decks</p>
                     <p class="text-[#4F4F4F] leading-[1.5] md:leading-[32px] tracking-[0px] text-[16px] md:text-[18px] font-normal not-italic px-4">Pitch deck sharing purpose-built to control your fundraising narrative.</p>                                        
                 </div>
                 <div class="scrollable-item w-[85vw] md:w-[409.22px] h-[337px] bg-white shadow-[0px_4.32476px_64.8715px_rgba(0,0,0,0.08)] text-center py-12 md:py-16 card-hover">
-                    <img src="./assets/decks.png" class="mx-auto w-12 mb-5">
+                    <img src="./assets/icons/decks.png" class="mx-auto w-12 mb-5">
                     <p class="text-[#141F39] font-medium font-inter leading-[1.2] md:leading-[44px] tracking-[-1px] text-[21px]">Decks</p>
                     <p class="text-[#4F4F4F] leading-[1.5] md:leading-[32px] tracking-[0px] text-[16px] md:text-[18px] font-normal not-italic px-4">Pitch deck sharing purpose-built to control your fundraising narrative.</p>                                        
                 </div>
                 <div class="scrollable-item w-[85vw] md:w-[409.22px] h-[337px] bg-white shadow-[0px_4.32476px_64.8715px_rgba(0,0,0,0.08)] text-center py-12 md:py-16 card-hover">
-                    <img src="./assets/decks.png" class="mx-auto w-12 mb-5">
+                    <img src="./assets/icons/decks.png" class="mx-auto w-12 mb-5">
                     <p class="text-[#141F39] font-medium font-inter leading-[1.2] md:leading-[44px] tracking-[-1px] text-[21px]">Decks</p>
                     <p class="text-[#4F4F4F] leading-[1.5] md:leading-[32px] tracking-[0px] text-[16px] md:text-[18px] font-normal not-italic px-4">Pitch deck sharing purpose-built to control your fundraising narrative.</p>                                        
                 </div>
 
                 <div class="scrollable-item w-[85vw] md:w-[409.22px] h-[337px] bg-white shadow-[0px_4.32476px_64.8715px_rgba(0,0,0,0.08)] text-center py-12 md:py-16 card-hover">
-                    <img src="./assets/decks.png" class="mx-auto w-12 mb-5">
+                    <img src="./assets/icons/decks.png" class="mx-auto w-12 mb-5">
                     <p class="text-[#141F39] font-medium font-inter leading-[1.2] md:leading-[44px] tracking-[-1px] text-[21px]">Decks</p>
                     <p class="text-[#4F4F4F] leading-[1.5] md:leading-[32px] tracking-[0px] text-[16px] md:text-[18px] font-normal not-italic px-4">Pitch deck sharing purpose-built to control your fundraising narrative.</p>                                        
                 </div>
@@ -226,7 +170,7 @@
                     <p class="text-[#002E25] leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[18px] font-inter font-medium">Business 1</p>
                     <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
                     <div class="flex justify-start gap-4 py-4">
-                        <div><img src="./assets/user1.png" class="w-12 h-12"></div>
+                        <div><img src="./assets/images/user1.png" class="w-12 h-12"></div>
                         <div>
                             <h6 class="text-[#060B13] leading-[1.2] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[18px] md:text-[21.9375px] mb-1 md:mb-2">Trevor Ogina</h6>
                             <p class="leading-[1.2] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[12px] md:text-[12.94px] font-medium">July 27, 2025</p>
@@ -235,18 +179,18 @@
                     <p class="text-[14px] text-[#3C4049] leading-[1.5] md:leading-[23.8px] tracking-[-0.08px] font-inter my-4">Capital Connect helped us structure our financials and pitch deck, leading to a $500K investment.</p>
                     <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
                     <ul class="flex justify-center md:justify-start mt-4 md:mt-5">
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
                     </ul>    
                 </div>
                 <div class="scrollable-item w-[85vw] md:w-[376px] h-auto md:h-[389.39px] bg-white rounded-[12px] border border-[#EBECEF] p-5 py-8 card-hover">
                     <p class="text-[#002E25] leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[18px] font-inter font-medium">Business 1</p>
                     <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
                     <div class="flex justify-start gap-4 py-4">
-                        <div><img src="./assets/user1.png" class="w-12 h-12"></div>
+                        <div><img src="./assets/images/user1.png" class="w-12 h-12"></div>
                         <div>
                             <h6 class="text-[#060B13] leading-[1.2] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[18px] md:text-[21.9375px] mb-1 md:mb-2">Trevor Ogina</h6>
                             <p class="leading-[1.2] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[12px] md:text-[12.94px] font-medium">July 27, 2025</p>
@@ -255,18 +199,18 @@
                     <p class="text-[14px] text-[#3C4049] leading-[1.5] md:leading-[23.8px] tracking-[-0.08px] font-inter my-4">Capital Connect helped us structure our financials and pitch deck, leading to a $500K investment.</p>
                     <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
                     <ul class="flex justify-center md:justify-start mt-4 md:mt-5">
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
                     </ul>    
                 </div>
                 <div class="scrollable-item w-[85vw] md:w-[376px] h-auto md:h-[389.39px] bg-white rounded-[12px] border border-[#EBECEF] p-5 py-8 card-hover">
                     <p class="text-[#002E25] leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[18px] font-inter font-medium">Business 1</p>
                     <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
                     <div class="flex justify-start gap-4 py-4">
-                        <div><img src="./assets/user1.png" class="w-12 h-12"></div>
+                        <div><img src="./assets/images/user1.png" class="w-12 h-12"></div>
                         <div>
                             <h6 class="text-[#060B13] leading-[1.2] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[18px] md:text-[21.9375px] mb-1 md:mb-2">Trevor Ogina</h6>
                             <p class="leading-[1.2] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[12px] md:text-[12.94px] font-medium">July 27, 2025</p>
@@ -275,18 +219,18 @@
                     <p class="text-[14px] text-[#3C4049] leading-[1.5] md:leading-[23.8px] tracking-[-0.08px] font-inter my-4">Capital Connect helped us structure our financials and pitch deck, leading to a $500K investment.</p>
                     <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
                     <ul class="flex justify-center md:justify-start mt-4 md:mt-5">
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
                     </ul>    
                 </div>
                 <div class="scrollable-item w-[85vw] md:w-[376px] h-auto md:h-[389.39px] bg-white rounded-[12px] border border-[#EBECEF] p-5 py-8 card-hover">
                     <p class="text-[#002E25] leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[18px] font-inter font-medium">Business 1</p>
                     <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
                     <div class="flex justify-start gap-4 py-4">
-                        <div><img src="./assets/user1.png" class="w-12 h-12"></div>
+                        <div><img src="./assets/images/user1.png" class="w-12 h-12"></div>
                         <div>
                             <h6 class="text-[#060B13] leading-[1.2] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[18px] md:text-[21.9375px] mb-1 md:mb-2">Trevor Ogina</h6>
                             <p class="leading-[1.2] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[12px] md:text-[12.94px] font-medium">July 27, 2025</p>
@@ -295,11 +239,11 @@
                     <p class="text-[14px] text-[#3C4049] leading-[1.5] md:leading-[23.8px] tracking-[-0.08px] font-inter my-4">Capital Connect helped us structure our financials and pitch deck, leading to a $500K investment.</p>
                     <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
                     <ul class="flex justify-center md:justify-start mt-4 md:mt-5">
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
                     </ul>    
                 </div>
 
@@ -307,7 +251,7 @@
                     <p class="text-[#002E25] leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[18px] font-inter font-medium">Business 1</p>
                     <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
                     <div class="flex justify-start gap-4 py-4">
-                        <div><img src="./assets/user1.png" class="w-12 h-12"></div>
+                        <div><img src="./assets/images/user1.png" class="w-12 h-12"></div>
                         <div>
                             <h6 class="text-[#060B13] leading-[1.2] md:leading-[28.8px] tracking-[-0.47px] font-inter font-medium text-[18px] md:text-[21.9375px] mb-1 md:mb-2">Trevor Ogina</h6>
                             <p class="leading-[1.2] md:leading-[18.8px] tracking-[-0.47px] text-[#666666] text-[12px] md:text-[12.94px] font-medium">July 27, 2025</p>
@@ -316,11 +260,11 @@
                     <p class="text-[14px] text-[#3C4049] leading-[1.5] md:leading-[23.8px] tracking-[-0.08px] font-inter my-4">Capital Connect helped us structure our financials and pitch deck, leading to a $500K investment.</p>
                     <hr class="w-full h-[1px] border-[#EBECEF] my-4"/>
                     <ul class="flex justify-center md:justify-start mt-4 md:mt-5">
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
-                        <li><img src="./assets/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
+                        <li><img src="./assets/icons/star.svg" class="w-5 h-5"></li>
                     </ul>    
                 </div>
             </div>
@@ -333,28 +277,28 @@
             <h1 class="text-[32px] md:text-[40px] font-inter font-medium leading-[1.2] md:leading-[60px] tracking-[-1.2px] text-[#002E25] scroll-section">Solutions for investors</h1>
             <div class="scrollable-container mt-8 md:mt-12">
                 <div class="scrollable-item w-[85vw] md:w-[409.22px] h-[337px] bg-white shadow-[0px_4.32476px_64.8715px_rgba(0,0,0,0.08)] text-center py-12 md:py-16 card-hover">
-                    <img src="./assets/decks.png" class="mx-auto w-12 mb-5">
+                    <img src="./assets/icons/decks.png" class="mx-auto w-12 mb-5">
                     <p class="text-[#141F39] font-medium font-inter leading-[1.2] md:leading-[44px] tracking-[-1px] text-[21px]">Decks</p>
                     <p class="text-[#4F4F4F] leading-[1.5] md:leading-[32px] tracking-[0px] text-[16px] md:text-[18px] font-normal not-italic px-4">Pitch deck sharing purpose-built to control your fundraising narrative.</p>                                        
                 </div>
                 <div class="scrollable-item w-[85vw] md:w-[409.22px] h-[337px] bg-white shadow-[0px_4.32476px_64.8715px_rgba(0,0,0,0.08)] text-center py-12 md:py-16 card-hover">
-                    <img src="./assets/decks.png" class="mx-auto w-12 mb-5">
+                    <img src="./assets/icons/decks.png" class="mx-auto w-12 mb-5">
                     <p class="text-[#141F39] font-medium font-inter leading-[1.2] md:leading-[44px] tracking-[-1px] text-[21px]">Decks</p>
                     <p class="text-[#4F4F4F] leading-[1.5] md:leading-[32px] tracking-[0px] text-[16px] md:text-[18px] font-normal not-italic px-4">Pitch deck sharing purpose-built to control your fundraising narrative.</p>                                        
                 </div>
                 <div class="scrollable-item w-[85vw] md:w-[409.22px] h-[337px] bg-white shadow-[0px_4.32476px_64.8715px_rgba(0,0,0,0.08)] text-center py-12 md:py-16 card-hover">
-                    <img src="./assets/decks.png" class="mx-auto w-12 mb-5">
+                    <img src="./assets/icons/decks.png" class="mx-auto w-12 mb-5">
                     <p class="text-[#141F39] font-medium font-inter leading-[1.2] md:leading-[44px] tracking-[-1px] text-[21px]">Decks</p>
                     <p class="text-[#4F4F4F] leading-[1.5] md:leading-[32px] tracking-[0px] text-[16px] md:text-[18px] font-normal not-italic px-4">Pitch deck sharing purpose-built to control your fundraising narrative.</p>                                        
                 </div>
                 <div class="scrollable-item w-[85vw] md:w-[409.22px] h-[337px] bg-white shadow-[0px_4.32476px_64.8715px_rgba(0,0,0,0.08)] text-center py-12 md:py-16 card-hover">
-                    <img src="./assets/decks.png" class="mx-auto w-12 mb-5">
+                    <img src="./assets/icons/decks.png" class="mx-auto w-12 mb-5">
                     <p class="text-[#141F39] font-medium font-inter leading-[1.2] md:leading-[44px] tracking-[-1px] text-[21px]">Decks</p>
                     <p class="text-[#4F4F4F] leading-[1.5] md:leading-[32px] tracking-[0px] text-[16px] md:text-[18px] font-normal not-italic px-4">Pitch deck sharing purpose-built to control your fundraising narrative.</p>                                        
                 </div>
 
                 <div class="scrollable-item w-[85vw] md:w-[409.22px] h-[337px] bg-white shadow-[0px_4.32476px_64.8715px_rgba(0,0,0,0.08)] text-center py-12 md:py-16 card-hover">
-                    <img src="./assets/decks.png" class="mx-auto w-12 mb-5">
+                    <img src="./assets/icons/decks.png" class="mx-auto w-12 mb-5">
                     <p class="text-[#141F39] font-medium font-inter leading-[1.2] md:leading-[44px] tracking-[-1px] text-[21px]">Decks</p>
                     <p class="text-[#4F4F4F] leading-[1.5] md:leading-[32px] tracking-[0px] text-[16px] md:text-[18px] font-normal not-italic px-4">Pitch deck sharing purpose-built to control your fundraising narrative.</p>                                        
                 </div>
@@ -399,33 +343,33 @@
             <h1 class="text-center leading-[1.2] md:leading-[70px] text-[#064635] tracking-[-1.2px] font-inter font-medium text-[32px] md:text-[60px]">Ready to take the next step?</h1>
             <p class="text-center text-[#000000] mt-6 leading-[1.5] md:leading-[41px] tracking-[-0.18px] font-inter text-[18px] md:text-[20px] font-normal not-italic">Get started with the leading platform for connecting businesses and <br/>investors seamlessly.</p>
             <div class="flex flex-col md:flex-row justify-center gap-4 md:gap-6 mt-8 md:mt-[60px]">
-                <button class="leading-[24px] font-semibold text-[14px] bg-[#FFFFFF] text-[#064635] flex justify-center items-center px-[24px] md:px-[38px] py-[16px] md:py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#f0f0f0]">Get Investment Ready<span class="ml-2"><img src="./assets/arrow-right.svg" class="w-4 h-4 inline"></span></button>
-                <button class="leading-[24px] font-semibold text-[14px] bg-[#FFFFFF] text-[#064635] flex justify-center items-center px-[24px] md:px-[38px] py-[16px] md:py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#f0f0f0]">Find Businesses to Invest in<span class="ml-2"><img src="./assets/arrow-right.svg" class="w-4 h-4 inline"></span></button>
+                <button class="leading-[24px] font-semibold text-[14px] bg-[#FFFFFF] text-[#064635] flex justify-center items-center px-[24px] md:px-[38px] py-[16px] md:py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#f0f0f0]">Get Investment Ready<span class="ml-2"><img src="./assets/icons/arrow-right.svg" class="w-4 h-4 inline"></span></button>
+                <button class="leading-[24px] font-semibold text-[14px] bg-[#FFFFFF] text-[#064635] flex justify-center items-center px-[24px] md:px-[38px] py-[16px] md:py-[20px] gap-[10px] w-full md:w-[287px] h-[53px] rounded-br-[10px] rounded-tl-[0px] rounded-tr-[10px] rounded-bl-[10px] isolate transition-all hover:bg-[#f0f0f0]">Find Businesses to Invest in<span class="ml-2"><img src="./assets/icons/arrow-right.svg" class="w-4 h-4 inline"></span></button>
             </div>
         </div>
     </div>
 
     <div id="footer" class="h-auto md:h-[680px] bg-[#000000] scroll-section">
         <div class="text-start md:grid md:grid-cols-5  md:px-4 md:mx-auto w-[90%] lg:w-[1708px] md:p-5 p-15 md:py-12 md:py-20 gap-8 md:gap-0 ">
-            <div class="md:col-span-1 flex md:justify-center md:block mb-10 md:mb-0"><img src="./assets/logo_black.png" class="w-40 md:w-auto transition-transform hover:scale-105"></div>
+            <div class="md:col-span-1 flex md:justify-center md:block mb-10 md:mb-0"><img src="./assets/images/logo_black.png" class="w-40 md:w-auto transition-transform hover:scale-105"></div>
             <div class="md:col-span-1">
                 <p class="text-[#B4B6C4] text-[14px]  md:text-[16px] font-chivo md:text-center md:text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quas error rem voluptates</p>
                 
                 
                 <p class="text-[#B4B6C4] text-[16px] font-chivo mt-4 text-center text-start md:text-left flex items-center gap-2">
-                    <img src="./assets/phone.svg" class="w-5 h-5"> +254715501703
+                    <img src="./assets/icons/phone.svg" class="w-5 h-5"> +254715501703
                   </p>
                   
                   <p class="text-[#B4B6C4] text-[16px] font-chivo text-center text-start md:text-left flex items-center gap-2">
-                    <img src="./assets/mail.svg" class="w-5 h-5"> services@capitalconnect.africa
+                    <img src="./assets/icons/mail.svg" class="w-5 h-5"> services@capitalconnect.africa
                   </p>
                   
                 
            
                 <ul class="flex justify-start md:justify-start gap-4 mt-8 md:mt-28 md:hidden">
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/bx_bxl-instagram-alt.png"></li>
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/akar-icons_twitter-fill.png"></li>
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/akar-icons_linkedin-fill.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/bx_bxl-instagram-alt.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_twitter-fill.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_linkedin-fill.png"></li>
                 </ul>
                 <p class="text-xs mt-4 md:mt-17 text-[#B4B6C4] font-chivo text-center md:text-left text-start">@All Rights Reserved</p>
             </div>
@@ -453,27 +397,14 @@
                     <li class="text-[#B4B6C4] text-[16px] font-chivo hover:text-[#FCBA05] cursor-pointer transition-colors">Terms</li>
                 </ul>
                 <ul class="flex justify-center md:justify-start gap-4 mt-8 md:mt-28">
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/bx_bxl-instagram-alt.png"></li>
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/akar-icons_twitter-fill.png"></li>
-                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/akar-icons_linkedin-fill.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/bx_bxl-instagram-alt.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_twitter-fill.png"></li>
+                    <li class="h-[24px] w-[21px] hover:scale-110 transition-transform"><img src="./assets/icons/akar-icons_linkedin-fill.png"></li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const mobileMenuButton = document.getElementById('mobileMenuButton');
-            const mobileMenu = document.getElementById('mobileMenu');
-            mobileMenuButton.addEventListener('click', function() { mobileMenu.classList.toggle('open'); });
-            document.querySelectorAll('#mobileMenu li').forEach(item => { item.addEventListener('click', function() { mobileMenu.classList.remove('open'); }); });
-            
-            const scrollSections = document.querySelectorAll('.scroll-section');
-            const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
-            scrollSections.forEach(section => { observer.observe(section); });
-            
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' }); }); });
-        });
-    </script>
+    <script src="./assets/js/navbar.js"> </script>
 </body>
 </html>
