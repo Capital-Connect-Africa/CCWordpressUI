@@ -5,90 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Connect</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @media (max-width: 768px) {
-            .hero-section {
-                height: auto;
-                padding: 4rem 1rem;
-            }
-            .feature-cards {
-                flex-direction: column;
-                align-items: center;
-            }
-            .feature-card {
-                width: 100%;
-                max-width: 468px;
-                margin-bottom: 1.5rem;
-            }
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-            .service-card {
-                width: 100%;
-            }
-            .success-stories {
-                flex-direction: column;
-            }
-            .success-card {
-                width: 100%;
-                margin-bottom: 1.5rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="font-inter">
+ 
+    <header class="sm:hidden md:block">
+    <nav class="p-6 md:p-5">
+        <div class="flex flex-row justify-between items-center">
+            <div class="animate-fadeIn md:relative  md:z-50"><img src="./assets/images/logo_green.png" class="w-30 ml-[5em] md:w-auto"></div>
+            <ul class="hidden md:flex">
+                <li class="font-semi-bold py-1 px-4 font-poppins nav-item"><a href="businesses.html">For Businesses</a></li>
+                <li class="font-semi-bold py-1 px-4 nav-item"><a href="investors.html">For Investors</a> </li>
+                <li class="font-semi-bold py-1 px-4 nav-item"><a href="plans.html">Pricing</a></li>
+                <li class="font-semi-bold py-1 px-4 nav-item"><a href="about.html">About us</a></li>
+                <li class="font-semi-bold py-1 px-4 nav-item"><a href="contact.html">Contact Us</a></li>
 
-    <!-- Navigation -->
-    <!-- Navigation -->
-    <header class="w-full font-poppins bg-[#064635] px-4 lg:px-[100px] py-4 flex justify-between items-center h-[115px]">
-        <!-- Logo -->
-        <div class="w-[145px]">
-            <img class="w-full h-[67px] object-contain" src="assets/images/logo.png" alt="Capital Connect Logo">
+                <li class="py-1 px-4 relative z-50"><button type="button" class="rounded-full px-4 py-1 bg-[#FCBA05] font-semi-bold hover:bg-[#e6a800] transition-all">Sign In/Signup</button></li>
+            </ul>
         </div>
-        
-        <!-- Desktop Menu -->
-        <nav class="nav-menu hidden lg:flex items-center space-x-6 text-white">
-            <a href="#" class="text-lg hover:text-[#FCBA05] transition">Home</a>
-            
-            <div class="relative group">
-                <button class="text-lg flex items-center gap-1 text-[#FCBA05]">
-                    For Businesses
-                    <svg class="w-4 h-4 transform group-hover:rotate-180 transition" viewBox="0 0 14 8">
-                        <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
-                    </svg>
-                </button>
-            </div>
-            
-            <div class="relative group">
-                <button class="text-lg hover:text-[#FCBA05] flex items-center gap-1 transition">
-                    For Investors
-                    <svg class="w-4 h-4 transform group-hover:rotate-180 transition" viewBox="0 0 14 8">
-                        <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
-                    </svg>
-                </button>
-            </div>
-            
-            <a href="#" class="text-lg hover:text-[#FCBA05] transition">Pricing</a>
-            <a href="#" class="text-lg hover:text-[#FCBA05] transition">About Us</a>
-            <a href="#" class="text-lg hover:text-[#FCBA05] transition">Contact Us</a>
-        </nav>
-        
-        <!-- Sign In Button -->
-        <button class="hidden lg:flex px-6 py-3 rounded-full bg-[#FCBA05] text-white text-sm font-medium hover:bg-[#e0a800] transition">
-            Sign In / Sign Up
-        </button>
-        
-        <!-- Mobile Menu Button -->
-        <button class="mobile-menu-button lg:hidden text-[#090C10]">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
+    </nav>
     </header>
 
+    <div class="sm:block md:hidden">
+        <div class="fixed top-0 right-0 z-50 p-4 md:hidden">
+            <button id="mobileMenuButton" class="text-white focus:outline-none">
+                <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+        </div>
+        <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-full bg-[#064635] z-40 pt-16">
+            <ul class="flex flex-col items-center py-4">
+                <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="businesses.html">For Businesses</a></li>
+                <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="investors.html">For Investors</a></li>
+                <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="plans.html">Pricing</a></li>
+                <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="about.html">About us</a></li>
+                <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="contact.html">Contact Us</a></li>
+    
+                <li class="py-3 px-4 w-full text-center">
+                    <button type="button" class="rounded-full px-6 py-2 bg-[#FCBA05] font-semi-bold w-3/4 mx-auto">Sign In/Signup</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
     <!-- Hero Section -->
-    <section class="hero-section w-full h-auto lg:h-[1038px] relative overflow-hidden bg-[#f4f8f7] px-4 lg:px-24 py-16 lg:py-28 flex flex-col justify-center items-start gap-2.5">
+    <section class="hero-section w-full h-auto lg:h-[950px] relative overflow-hidden bg-[#f4f8f7] px-4 lg:px-24 flex flex-col justify-center items-start gap-2.5">
         <h1 class="text-zinc-900 text-3xl lg:text-5xl font-medium font-inter leading-tight lg:leading-[67.80px] w-full text-center lg:text-left">
             Turn Your Vision into a Funded Reality
         </h1>
@@ -150,7 +113,6 @@
         </div>
     </section>
 
-    <!-- Key Services Section -->
     <section class="w-full py-16 lg:py-24 px-4 lg:px-24">
         <div class="container mx-auto">
             <div class="text-center mb-12">
@@ -256,8 +218,6 @@
         </div>
     </section>
 
-
-        <!-- Key Features Section -->
         <section class="w-full h-auto lg:h-[639px] relative py-16 lg:py-24">
             <div class="container mx-auto px-4 lg:px-0 flex flex-col lg:flex-row items-center">
                 <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
@@ -324,14 +284,11 @@
               </div>
               
               <div class="relative w-full py-8 lg:py-16 flex flex-col lg:flex-row items-center justify-center">
-                <!-- Testimonial Card -->
                 <div class="testimonial-card flex flex-col lg:flex-row max-w-6xl w-full rounded-2xl overflow-hidden border border-[#EFF0F6] shadow-lg bg-white">
-                  <!-- Image Section -->
                   <div class="testimonial-image relative w-full lg:w-[500px] h-[300px] lg:h-[470px] overflow-hidden">
                     <img class="absolute inset-0 w-full h-full object-cover" src="assets/images/nas_play_pic.png" alt="Testimonial" />
                     <div class="absolute inset-0 bg-black/50"></div>
                     
-                    <!-- Play Button -->
                     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
                       <div class="w-20 h-20 lg:w-28 lg:h-28 bg-white rounded-full flex items-center justify-center shadow-lg">
                         <div class="w-8 h-8 lg:w-10 lg:h-10 bg-[#FCBA05] rounded-sm"></div>
@@ -339,13 +296,11 @@
                     </div>
                   </div>
                   
-                  <!-- Content Section -->
                   <div class="testimonial-content w-full lg:w-auto flex-1 p-8 lg:p-12">
                     <blockquote class="text-[#6F6C90] text-lg lg:text-xl leading-relaxed lg:leading-[30px] mb-8 lg:mb-12">
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam, quis nostrud..."
                     </blockquote>
                     
-                    <!-- Profile -->
                     <div class="flex items-center gap-4">
                       <div class="w-14 h-14 lg:w-16 lg:h-16 rounded-full overflow-hidden shadow-md">
                         <img class="w-full h-full object-cover" src="https://placehold.co/100x100" alt="Jane Doe" />
@@ -361,184 +316,6 @@
             </div>
           </section>
 
-    <!-- CTA Section 1 -->
-    <!-- <section class="w-full py-16 lg:py-24 px-4">
-        <div class="container mx-auto">
-            <div class="bg-[#447468] rounded-2xl h-auto lg:h-[473px] px-8 lg:px-0 py-12 lg:py-24 flex flex-col justify-center items-center text-center">
-                <h2 class="text-white text-3xl lg:text-6xl font-medium font-inter leading-tight lg:leading-[70px] tracking-tight mb-8 lg:mb-12 px-4 lg:px-0">
-                    See Who's Ready to Invest in You!
-                </h2>
-                <button class="px-8 lg:px-12 py-4 lg:py-5 bg-[#FCBA05] text-white text-sm lg:text-base font-semibold rounded-br-[10px] rounded-tr-[10px] rounded-bl-[10px] flex items-center gap-2 hover:bg-[#e6a800] transition">
-                    Explore Investors Now
-                    <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                </button>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Valuation Tool Section -->
-    <!-- <section class="w-full h-auto lg:h-[675px] relative py-16 lg:py-24">
-        <div class="container mx-auto px-4 lg:px-0 flex flex-col lg:flex-row items-center">
-            <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
-                <img class="w-full h-auto lg:h-[560px] object-cover" src="assets/images/handGraph.png" alt="Valuation tool" />
-            </div>
-            <div class="w-full lg:w-1/2 pl-0 lg:pl-12">
-                <h2 class="text-emerald-950 text-3xl lg:text-4xl font-medium font-poppins leading-tight lg:leading-[50px] mb-6">
-                    Know Your Worth – Get an Accurate Business Valuation
-                </h2>
-                <p class="text-black text-lg lg:text-2xl font-normal font-poppins leading-relaxed lg:leading-9 mb-8">
-                    Determine a fair valuation for your business using industry-leading methodologies and real market data. Our automated tool ensures an impartial and data-driven valuation to help you make informed investment decisions.
-                </p>
-                
-                <h3 class="text-emerald-950 text-2xl lg:text-3xl font-medium font-poppins leading-tight lg:leading-[50px] mb-6">
-                    Why Use Our Valuation Tool?
-                </h3>
-                
-                <ul class="space-y-4">
-                    <li class="flex items-start">
-                        <div class="w-6 h-6 mt-1 mr-4 flex-shrink-0">
-                            <div class="w-3.5 h-3.5 outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
-                        </div>
-                        <span class="text-emerald-950 text-lg lg:text-xl font-medium font-inter leading-normal">
-                            Market-Driven Insights
-                        </span>
-                    </li>
-                    <li class="flex items-start">
-                        <div class="w-6 h-6 mt-1 mr-4 flex-shrink-0">
-                            <div class="w-3.5 h-3.5 outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
-                        </div>
-                        <span class="text-emerald-950 text-lg lg:text-xl font-medium font-inter leading-tight">
-                            Objective & Impartial
-                        </span>
-                    </li>
-                    <li class="flex items-start">
-                        <div class="w-6 h-6 mt-1 mr-4 flex-shrink-0">
-                            <div class="w-3.5 h-3.5 outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
-                        </div>
-                        <span class="text-emerald-950 text-lg lg:text-xl font-medium font-inter leading-normal">
-                            Investor-Ready Reports
-                        </span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Success Stories Section -->
-    <!-- <section class="w-full py-16 lg:py-24 px-4 lg:px-24">
-        <div class="container mx-auto">
-            <div class="text-center mb-12">
-                <p class="text-zinc-700 text-lg font-medium font-inter leading-normal mb-2">
-                    Success Stories
-                </p>
-                <h2 class="text-zinc-900 text-3xl lg:text-4xl font-medium font-inter leading-tight lg:leading-[60px]">
-                    See how we've helped other Businesses succeed
-                </h2>
-            </div>
-            
-            <div class="success-stories flex flex-col lg:flex-row justify-center items-start gap-6 overflow-x-auto pb-8">
-                <div class="success-card w-full lg:w-[534px] bg-stone-50 rounded-xl overflow-hidden">
-                    <img class="w-full h-auto lg:h-[483px] object-cover" src="assets/images/eat_green.png" alt="Eat Greens" />
-                    <div class="p-5 lg:p-7 bg-white">
-                        <h3 class="text-black text-2xl font-bold font-inter leading-7 mb-4">
-                            Eat Greens
-                        </h3>
-                        <p class="text-zinc-700 text-sm font-normal font-inter leading-tight mb-6">
-                            A Kenyan agribusiness specializing in organic produce, committed to sustainable farming and empowering smallholder farmers.
-                        </p>
-                        <div class="w-12 h-[3px] bg-amber-300 mb-6"></div>
-                        <blockquote class="text-neutral-500 text-base font-normal font-inter leading-tight mb-8">
-                            <p>
-                                "Capital Connect helped us refine our financials and connect with the right investors. Within months, we secured the funding we needed to scale our organic farming operations nationwide!"
-                            </p>
-                            <p class="font-bold mt-2">Jane Mwangi, Founder</p>
-                        </blockquote>
-                        
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <div class="w-6 h-6 mr-4 flex-shrink-0">
-                                    <div class="w-3.5 h-3.5 outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
-                                </div>
-                                <span class="text-CAPITAL-GREEN-75 text-xl lg:text-2xl font-semibold font-inter leading-normal">
-                                    KES 20M Raised
-                                </span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="w-6 h-6 mr-4 flex-shrink-0">
-                                    <div class="w-3.5 h-3.5 outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
-                                </div>
-                                <span class="text-emerald-950 text-sm font-medium font-inter leading-tight">
-                                    Investment Readiness Advisory
-                                </span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="w-6 h-6 mr-4 flex-shrink-0">
-                                    <div class="w-3.5 h-3.5 outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
-                                </div>
-                                <span class="text-emerald-950 text-sm font-medium font-inter leading-normal">
-                                    Matched with Impact Investors
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="success-card w-full lg:w-[534px] bg-stone-50 rounded-xl overflow-hidden">
-                    <img class="w-full h-auto lg:h-[483px] object-cover" src="assets/images/eat_green.png" alt="Eat Greens" />
-                    <div class="p-5 lg:p-7 bg-white">
-                        <h3 class="text-black text-2xl font-bold font-inter leading-7 mb-4">
-                            Eat Greens
-                        </h3>
-                        <p class="text-zinc-700 text-sm font-normal font-inter leading-tight mb-6">
-                            A Kenyan agribusiness specializing in organic produce, committed to sustainable farming and empowering smallholder farmers.
-                        </p>
-                        <div class="w-12 h-[3px] bg-amber-300 mb-6"></div>
-                        <blockquote class="text-neutral-500 text-base font-normal font-inter leading-tight mb-8">
-                            <p>
-                                "Capital Connect helped us refine our financials and connect with the right investors. Within months, we secured the funding we needed to scale our organic farming operations nationwide!"
-                            </p>
-                            <p class="font-bold mt-2">Jane Mwangi, Founder</p>
-                        </blockquote>
-                        
-                        <div class="space-y-4">
-                            <div class="flex items-center">
-                                <div class="w-6 h-6 mr-4 flex-shrink-0">
-                                    <div class="w-3.5 h-3.5 outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
-                                </div>
-                                <span class="text-CAPITAL-GREEN-75 text-xl lg:text-2xl font-semibold font-inter leading-normal">
-                                    KES 20M Raised
-                                </span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="w-6 h-6 mr-4 flex-shrink-0">
-                                    <div class="w-3.5 h-3.5 outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
-                                </div>
-                                <span class="text-emerald-950 text-sm font-medium font-inter leading-tight">
-                                    Investment Readiness Advisory
-                                </span>
-                            </div>
-                            <div class="flex items-center">
-                                <div class="w-6 h-6 mr-4 flex-shrink-0">
-                                    <div class="w-3.5 h-3.5 outline outline-[1.50px] outline-offset-[-0.75px] outline-emerald-950"></div>
-                                </div>
-                                <span class="text-emerald-950 text-sm font-medium font-inter leading-normal">
-                                    Matched with Impact Investors
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="w-full h-1.5 bg-violet-100 rounded-sm mt-8">
-                <div class="w-44 h-1.5 bg-amber-300 rounded-sm"></div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- CTA Section 2 -->
     <section class="w-full py-16 lg:py-24 px-4">
         <div class="container mx-auto">
             <div class="bg-[#FCBA05] rounded-2xl h-auto lg:h-[568px] px-8 lg:px-0 py-12 lg:py-24 flex flex-col justify-center items-center text-center">
@@ -567,15 +344,9 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="w-full bg-black text-white py-12 lg:py-20 px-4">
         <div class="container mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 lg:gap-12">
-                <!-- Column 1 -->
-                <!-- <div class="flex justify-center lg:justify-start">
-                    <img src="./assets/images/logo_black.png" class="w-40 lg:w-auto h-auto transition-transform hover:scale-105" alt="Capital Connect Logo" />
-                </div> -->
-
             <div class="md:col-span-1 flex md:justify-center md:block mb-10 md:mb-0"><img src="./assets/images/logo_black.png" class="w-40 md:w-auto transition-transform hover:scale-105"></div>
 
                 
@@ -701,5 +472,7 @@
             </div>
         </div>
     </footer>
+
+  <script src="./assets/js/navbar.js"> </script>
 </body>
 </html>
