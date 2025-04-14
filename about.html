@@ -5,110 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital Connect | About</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        /* Custom styles for mobile responsiveness */
-        @media (max-width: 768px) {
-            .scrollable-container {
-                overflow-x: auto;
-                white-space: nowrap;
-                padding-bottom: 20px;
-                -webkit-overflow-scrolling: touch;
-            }
-            .scrollable-item {
-                display: inline-block;
-                margin-right: 15px;
-                white-space: normal;
-                width: 85%;
-            }
-            .scrollable-item:last-child {
-                margin-right: 0;
-            }
-            
-            .team-member-card {
-                width: 100%;
-                margin-bottom: 30px;
-            }
-            
-            .stats-container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .stat-item {
-                width: 100%;
-                margin-bottom: 20px;
-                text-align: center;
-            }
-            
-            .feature-section {
-                flex-direction: column;
-            }
-            .feature-image {
-                width: 100%;
-                order: 1;
-            }
-            .feature-content {
-                width: 100%;
-                order: 2;
-            }
-        }
-        
-        /* How It Works dots connector line */
-        .dot-connector {
-            position: relative;
-        }
-        .dot-connector:after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 100%;
-            height: 2px;
-            background-color: #FCBA05;
-            transform: translate(-50%, -50%);
-            z-index: -1;
-        }
-        @media (max-width: 768px) {
-            .dot-connector:after {
-                width: 2px;
-                height: 100%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body class="font-inter">
-
-  <!-- Header -->
   <header class="w-full bg-white px-4 lg:px-[100px] py-4 flex flex-wrap items-center justify-between h-auto lg:h-[115px] sticky top-0 z-50 shadow-sm">
-    <!-- Logo -->
     <div class="w-[120px] lg:w-[145px] pt-2 lg:pt-5">
-        <img class="w-full h-auto lg:h-[67px] object-contain" src="assets/images/logo_green.png" alt="Capital Connect Logo">
+        <img class="w-full h-auto lg:h-[67px] object-contain sm" src="assets/images/logo_green.png" alt="Capital Connect Logo">
     </div>
     
-    <!-- Mobile Menu Button -->
-    <button class="lg:hidden text-[#090C10]">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-    </button>
-    
-    <!-- Desktop Navigation Menu -->
     <nav class="hidden lg:flex items-center space-x-6">
-        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition">Home</a>
+        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition"><a href="index.html">Home</a></a>
         
         <div class="relative group">
             <button class="text-[18px] font-normal text-[#FCBA05] flex items-center gap-1 transition">
-                For Businesses
+              <a href="businesses.html">For Businesses</a>
                 <svg class="w-4 h-4 transform group-hover:rotate-180 transition" viewBox="0 0 14 8">
                     <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
                 </svg>
             </button>
         </div>
         
-        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition">For Investors</a>
-        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition">Pricing</a>
-        <a href="#" class="text-[18px] font-normal text-[#FCBA05] transition">About Us</a>
-        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition">Contact Us</a>
+        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition"><a href="investors.html">For Investors</a></a>
+        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition"><a href="plans.html">Pricing</a></a>
+        <a href="#" class="text-[18px] font-normal text-[#FCBA05] transition"><a href="about.html">About us</a></a>
+        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition"><a href="contact.html">Contact Us</a></a>
         
         <button class="px-6 py-3 rounded-full bg-[#FCBA05] text-white text-sm font-medium hover:bg-[#e0a800] transition">
             Sign In / Sign Up
@@ -116,29 +37,29 @@
     </nav>
   </header>
 
-  <!-- Mobile Menu (hidden by default) -->
-  <div class="mobile-menu hidden lg:hidden fixed inset-0 bg-white z-50 overflow-y-auto pt-20 px-4">
-    <nav class="flex flex-col space-y-6">
-      <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">Home</a>
-      <a href="#" class="text-lg text-[#FCBA05] transition">For Businesses</a>
-      <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">For Investors</a>
-      <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">Pricing</a>
-      <a href="#" class="text-lg text-[#FCBA05] font-medium transition">About Us</a>
-      <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">Contact Us</a>
-      
-      <button class="mt-8 px-6 py-3 rounded-full bg-[#FCBA05] text-white text-sm font-medium hover:bg-[#e0a800] transition">
-          Sign In / Sign Up
-      </button>
-    </nav>
-    
-    <button class="mobile-menu-close absolute top-4 right-4 text-[#090C10]">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-        </svg>
-    </button>
-  </div>
+  <div>
+    <div class="fixed top-0 right-0 z-50 p-4 md:hidden">
+        <button id="mobileMenuButton" class="text-white focus:outline-none">
+            <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+    <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-full bg-[#064635] z-40 pt-16">
+        <ul class="flex flex-col items-center py-4">
+            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="businesses.html">For Businesses</a></li>
+            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="investors.html">For Investors</a></li>
+            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="plans.html">Pricing</a></li>
+            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="about.html">About us</a></li>
+            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="contact.html">Contact Us</a></li>
 
-  <!-- Hero Section -->
+            <li class="py-3 px-4 w-full text-center">
+                <button type="button" class="rounded-full px-6 py-2 bg-[#FCBA05] font-semi-bold w-3/4 mx-auto">Sign In/Signup</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
   <section class="bg-[#F4F8F7]">
     <div class="w-full px-4 lg:px-24 py-12 lg:py-28 overflow-hidden flex flex-col justify-center items-start gap-6 lg:gap-10">
         <div class="text-gray-600 text-lg lg:text-xl font-medium leading-tight">
@@ -154,17 +75,14 @@
     </div>
   </section>
 
-  <!-- Growth Partner Section -->
   <section class="w-full bg-[#F4F8F7] px-4 lg:px-[97px] py-10 lg:py-20">
     <div class="flex flex-col lg:flex-row justify-between items-start gap-8 lg:gap-10">
-      <!-- Left Text Box -->
       <div class="w-full lg:w-[497px]">
         <h2 class="text-[#1A1A1A] text-3xl lg:text-[40px] font-medium leading-tight lg:leading-[50px]">
           Your Growth Partner in the Investment Journey
         </h2>
       </div>
   
-      <!-- Right Description Text -->
       <div class="w-full lg:w-[1137px]">
         <p class="text-[#3A3A38] text-base lg:text-[19px] font-normal leading-relaxed lg:leading-[34px]">
           At Capital Connect, we are transforming the way businesses secure funding and how investors discover high-potential opportunities.
@@ -179,80 +97,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Why Choose Us Section -->
-  <!-- <section class="w-full py-10 lg:py-20 overflow-hidden">
-    <div class="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-[147px] px-4 lg:px-0">
-      <div class="feature-image w-full lg:w-[827px] relative overflow-hidden">
-        <div class="hidden lg:block w-full h-[676px] bg-white rounded-lg border-4 border-black">
-          <img class="hidden md:block w-full h-auto object-contain" src="assets/images/abt-right.png" alt="Why Choose Us" />
-        </div>
-      </div>
-      
-      <div class="feature-content w-full lg:w-[755px]">
-        <h2 class="text-[#002E25] text-3xl lg:text-[40px] font-medium leading-tight lg:leading-[50px] mb-6 lg:mb-8">
-          Why We're the Right Choice for Your Funding Journey
-        </h2>
-        
-        <div class="space-y-4">
-          <div class="flex items-start gap-4">
-            <div class="w-6 h-6 flex-shrink-0">
-              <img src="./assets/icons/check.svg" alt="Check" class="w-full h-full" />
-            </div>
-            <div>
-              <p class="text-[#002E25] text-sm lg:text-base">
-                <span class="font-bold">Tech-Driven Matching:</span>
-                <span class="font-medium"> Smart algorithms help businesses find the right investors.</span>
-              </p>
-            </div>
-          </div>
-          
-          <div class="flex items-start gap-4">
-            <div class="w-6 h-6 flex-shrink-0">
-              <img src="./assets/icons/check.svg" alt="Check" class="w-full h-full" />
-            </div>
-            <div>
-              <p class="text-[#002E25] text-sm lg:text-base">
-                <span class="font-bold">Expert Support:</span>
-                <span class="font-medium"> Our advisors help structure financials & key documents.</span>
-              </p>
-            </div>
-          </div>
-          
-          <div class="flex items-start gap-4">
-            <div class="w-6 h-6 flex-shrink-0">
-              <img src="./assets/icons/check.svg" alt="Check" class="w-full h-full" />
-            </div>
-            <div>
-              <p class="text-[#002E25] text-sm lg:text-base">
-                <span class="font-bold">Exclusive Access:</span>
-                <span class="font-medium"> Investors get early access to promising startups.</span>
-              </p>
-            </div>
-          </div>
-          
-          <div class="flex items-start gap-4">
-            <div class="w-6 h-6 flex-shrink-0">
-              <img src="./assets/icons/check.svg" alt="Check" class="w-full h-full" />
-            </div>
-            <div>
-              <p class="text-[#002E25] text-sm lg:text-base">
-                <span class="font-bold">Trust & Transparency:</span>
-                <span class="font-medium"> We provide clear, structured insights for better decision-making.</span>
-              </p>
-            </div>
-          </div>
-        </div>
-        
-        <button class="mt-8 px-6 py-3 bg-[#002E25] text-white rounded-lg uppercase text-sm font-medium">
-          More About Us
-        </button>
-      </div>
-    </div>
-  </section> -->
-
-
-  <!-- Team Section -->
   <section class="w-full px-4 lg:px-24 py-12 lg:py-20">
     <div class="mb-12 lg:mb-20">
       <p class="text-[#3C4049] text-lg lg:text-xl font-medium mb-2">The Team</p>
@@ -262,7 +106,6 @@
     </div>
     
     <div class="flex flex-col lg:flex-row flex-wrap justify-center gap-8">
-      <!-- Team Member 1 -->
       <div class="team-member-card w-full lg:w-[534px] bg-[#F9F9F9] rounded-xl p-6 lg:p-8">
         <div class="flex flex-col items-center gap-6">
           <img class="w-full lg:w-[483px] h-auto rounded-sm" src="assets/images/nas.png" alt="Francis Nasyomba" />
@@ -280,7 +123,6 @@
         </div>
       </div>
       
-      <!-- Team Member 2 -->
       <div class="team-member-card w-full lg:w-[534px] bg-[#FBFBFB] rounded-xl p-6 lg:p-8">
         <div class="flex flex-col items-center gap-6">
           <img class="w-full lg:w-[483px] h-auto rounded-lg" src="assets/images/Penny.png" alt="Penny Njoki" />
@@ -298,7 +140,6 @@
         </div>
       </div>
       
-      <!-- Team Member 3 -->
       <div class="team-member-card w-full lg:w-[534px] bg-[#FBFBFB] rounded-xl p-6 lg:p-8">
         <div class="flex flex-col items-center gap-6">
           <img class="w-full lg:w-[483px] h-auto rounded-lg" src="assets/images/vic.png" alt="Victor Karanja" />
@@ -428,8 +269,6 @@
     </div>
 </div>
 
-
-  <!-- CTA Section -->
   <section class="py-12 lg:py-20 px-4">
     <div class="bg-[#FCBA05] rounded-2xl h-auto py-12 lg:py-24 px-6 lg:px-12 text-center transition-all hover:shadow-xl">
       <h2 class="text-[#064635] text-3xl lg:text-5xl font-medium leading-tight lg:leading-[70px] mb-6">
@@ -455,18 +294,10 @@
     </div>
   </section>
 
-  <!-- Footer -->
   <footer class="bg-black text-white py-12 lg:py-20">
     <div class="container mx-auto px-4 lg:px-8">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
-        <!-- Column 1: Logo -->
         <div class="md:col-span-1 flex md:justify-center md:block mb-10 md:mb-0"><img src="./assets/images/logo_black.png" class="w-40 md:w-auto transition-transform hover:scale-105"></div>
-
-        <!-- <div class="flex justify-center md:justify-start">
-          <img src="assets/images/logo_black.png" alt="Capital Connect Logo" class="h-12 lg:h-auto w-auto transition-transform hover:scale-105" />
-        </div> -->
-        
-        <!-- Column 2: Contact -->
         <div>
           <p class="text-[#B4B6C4] text-sm lg:text-base mb-6 text-center md:text-left">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus quas error rem voluptates
@@ -488,7 +319,6 @@
             </p>
           </div>
           
-          <!-- Mobile Social Icons -->
           <div class="flex justify-center md:justify-start gap-4 mt-6 md:hidden">
             <a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">
               <img src="./assets/icons/bx_bxl-instagram-alt.png" class="w-6 h-6" alt="Instagram">
@@ -504,7 +334,6 @@
           <p class="text-xs mt-6 text-[#B4B6C4] text-center md:text-left">@All Rights Reserved</p>
         </div>
         
-        <!-- Column 3: Benefits (Desktop) -->
         <div class="hidden md:block">
           <h3 class="font-bold text-base mb-4">Benefits</h3>
           <ul class="space-y-2">
@@ -513,8 +342,7 @@
             <li><a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">For Advisors</a></li>
           </ul>
         </div>
-        
-        <!-- Column 4: About (Desktop) -->
+
         <div class="hidden md:block">
           <h3 class="font-bold text-base mb-4">About</h3>
           <ul class="space-y-2">
@@ -525,7 +353,6 @@
           </ul>
         </div>
         
-        <!-- Column 5: Resources (Desktop) -->
         <div class="hidden md:block">
           <h3 class="font-bold text-base mb-4">Resources</h3>
           <ul class="space-y-2">
@@ -533,7 +360,6 @@
             <li><a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">Terms</a></li>
           </ul>
           
-          <!-- Desktop Social Icons -->
           <div class="flex gap-4 mt-8">
             <a href="#" class="text-[#B4B6C4] hover:text-[#FCBA05] transition">
               <img src="./assets/icons/bx_bxl-instagram-alt.png" class="w-6 h-6" alt="Instagram">
@@ -550,17 +376,6 @@
     </div>
   </footer>
 
-  <script>
-    // Mobile menu toggle functionality
-    document.querySelector('header button').addEventListener('click', function() {
-      document.querySelector('.mobile-menu').classList.remove('hidden');
-      document.body.style.overflow = 'hidden';
-    });
-    
-    document.querySelector('.mobile-menu-close').addEventListener('click', function() {
-      document.querySelector('.mobile-menu').classList.add('hidden');
-      document.body.style.overflow = 'auto';
-    });
-  </script>
+  <script src="./assets/js/navbar.js"> </script>
 </body>
 </html>
