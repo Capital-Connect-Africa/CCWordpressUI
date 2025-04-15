@@ -9,53 +9,57 @@
 </head>
 
 <body class="font-inter">
-
-  <!-- Header -->
-  <header class="w-full font-poppins bg-white px-4 lg:px-[100px] py-4 flex justify-between items-center h-auto lg:h-[115px] sticky top-0 z-50 shadow-sm">
-    <!-- Logo -->
-    <div class="w-[120px] lg:w-[145px]">
-        <img class="w-full h-auto lg:h-[67px] object-contain" src="assets/images/logo_green.png" alt="Capital Connect Logo">
+  <header class="w-full bg-white px-4 lg:px-[100px] py-4 flex flex-wrap items-center justify-between h-auto lg:h-[115px] sticky top-0 z-50">
+    <div class="w-[120px] lg:w-[145px] pt-2 lg:pt-5">
+        <img class="w-full h-auto lg:h-[67px] object-contain sm" src="assets/images/logo_green.png" alt="Capital Connect Logo">
     </div>
     
-    <!-- Desktop Menu -->
-    <nav class="nav-menu hidden lg:flex items-center space-x-6">
-        <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">Home</a>
-         
-        <div class="relative group">
-          <button class="text-lg text-[#090C10] hover:text-[#FCBA05] flex items-center gap-1 transition">
-              For Businesses
-              <svg class="w-4 h-4 transform group-hover:rotate-180 transition" viewBox="0 0 14 8">
-                  <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
-              </svg>
-          </button>
-      </div>
+    <!-- Desktop Navigation (unchanged) -->
+    <nav class="hidden lg:flex items-center space-x-6">
+        <a href="index.html" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition">Home</a>
         
         <div class="relative group">
-            <button class="text-lg text-[#FCBA05] flex items-center gap-1">
-                For Investors
-                <svg class="w-4 h-4 transform group-hover:rotate-180 transition" viewBox="0 0 14 8">
-                    <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
-                </svg>
+            <button class="text-[18px] font-normal flex items-center gap-1 transition">
+              <a href="businesses.html">For Businesses</a>
             </button>
         </div>
-
-        <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">Pricing</a>
-        <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">About Us</a>
-        <a href="#" class="text-lg text-[#090C10] hover:text-[#FCBA05] transition">Contact Us</a>
+        
+        <a href="investors.html" class="text-[18px] font-normal text-[#FCBA05] hover:text-[#FCBA05] transition">For Investors</a>
+        <a href="plans.html" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition">Pricing</a>
+        <a href="about.html" class="text-[18px] font-normal transition">About us</a>
+        <a href="contact.html" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition">Contact Us</a>
+        
+        <button class="px-6 py-3 rounded-full bg-[#FCBA05] text-white text-sm font-medium hover:bg-[#e0a800] transition">
+            Sign In / Sign Up
+        </button>
     </nav>
-    
-    <!-- Sign In Button -->
-    <button class="hidden lg:flex px-6 py-3 rounded-full bg-[#FCBA05] text-white text-sm font-medium hover:bg-[#e0a800] transition">
-        Sign In / Sign Up
-    </button>
-    
+
     <!-- Mobile Menu Button -->
-    <button class="mobile-menu-button lg:hidden text-[#090C10]">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <button id="mobileMenuButton" class="lg:hidden p-2 focus:outline-none">
+        <svg class="w-8 h-8 text-[#090C10]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
     </button>
   </header>
+
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-white z-40 pt-20 px-6 hidden">
+      <ul class="flex flex-col space-y-4">
+          <li><a href="index.html" class="block py-3 text-xl font-medium text-[#090C10] border-b border-gray-100">Home</a></li>
+          <li><a href="businesses.html" class="block py-3 text-xl font-medium text-[#090C10] border-b border-gray-100">For Businesses</a></li>
+          <li><a href="investors.html" class="block py-3 text-xl font-medium text-[#090C10] border-b border-gray-100">For Investors</a></li>
+          <li><a href="plans.html" class="block py-3 text-xl font-medium text-[#090C10] border-b border-gray-100">Pricing</a></li>
+          <li><a href="about.html" class="block py-3 text-xl font-medium text-[#FCBA05] border-b border-gray-100">About us</a></li>
+          <li><a href="contact.html" class="block py-3 text-xl font-medium text-[#090C10] border-b border-gray-100">Contact Us</a></li>
+          <li class="pt-4">
+              <button class="w-full py-4 rounded-full bg-[#FCBA05] text-white text-lg font-medium">
+                  Sign In / Sign Up
+              </button>
+          </li>
+      </ul>
+  </div>
+
+
 
   <!-- Hero Section -->
   <section class="bg-[#F4F8F7] h-auto lg:h-[800px] xl:h-[1038px]">
@@ -406,14 +410,7 @@
     </button>
   </div>
 
-  <script>
-    document.querySelector('.mobile-menu-button').addEventListener('click', function() {
-      document.querySelector('.mobile-menu').classList.remove('hidden');
-    });
-    
-    document.querySelector('.mobile-menu-close').addEventListener('click', function() {
-      document.querySelector('.mobile-menu').classList.add('hidden');
-    });
-  </script>
+  <script src="./assets/js/navbar.js"> </script>
+
 </body>
 </html>

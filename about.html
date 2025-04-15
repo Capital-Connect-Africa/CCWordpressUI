@@ -9,56 +9,64 @@
 </head>
 
 <body class="font-inter">
-  <header class="w-full bg-white px-4 lg:px-[100px] py-4 flex flex-wrap items-center justify-between h-auto lg:h-[115px] sticky top-0 z-50 shadow-sm">
+  <header class="w-full bg-white px-4 lg:px-[100px] py-4 flex flex-wrap items-center justify-between h-auto lg:h-[115px] sticky top-0 z-50">
     <div class="w-[120px] lg:w-[145px] pt-2 lg:pt-5">
         <img class="w-full h-auto lg:h-[67px] object-contain sm" src="assets/images/logo_green.png" alt="Capital Connect Logo">
     </div>
     
+    <!-- Desktop Navigation (unchanged) -->
     <nav class="hidden lg:flex items-center space-x-6">
-        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition"><a href="index.html">Home</a></a>
-        
+        <a href="index.html" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition">Home</a>
+        <a href="businesses.html">For Businesses</a>
+        <a href="investors.html" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition">For Investors</a>
+        <a href="plans.html" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition">Pricing</a>
         <div class="relative group">
-            <button class="text-[18px] font-normal text-[#FCBA05] flex items-center gap-1 transition">
-              <a href="businesses.html">For Businesses</a>
-                <svg class="w-4 h-4 transform group-hover:rotate-180 transition" viewBox="0 0 14 8">
-                    <path d="M0.812073 0.917363C0.811647 0.827035 0.829265 0.737531 0.863896 0.654103C0.898526 0.570675 0.94947 0.495004 1.01374 0.43153C1.14265 0.302784 1.31739 0.230468 1.49957 0.230468C1.68176 0.230468 1.8565 0.302784 1.98541 0.43153L6.99957 5.4457L12.0137 0.431531C12.1441 0.310091 12.3164 0.243977 12.4946 0.24712C12.6727 0.250262 12.8426 0.322416 12.9686 0.448377C13.0945 0.574339 13.1667 0.744276 13.1698 0.922385C13.173 1.10049 13.1068 1.27287 12.9854 1.4032L7.4854 6.9032C7.3565 7.03194 7.18176 7.10426 6.99957 7.10426C6.81738 7.10426 6.64265 7.03194 6.51374 6.9032L1.01374 1.4032C0.94947 1.33972 0.898526 1.26405 0.863896 1.18062C0.829265 1.0972 0.811647 1.00769 0.812073 0.917363Z" fill="#666666"/>
-                </svg>
-            </button>
+          <button class="text-[18px] font-normal text-[#FCBA05] flex items-center gap-1 transition">
+            <a href="about.html" class="text-[18px] font-normal text-[#FCBA05] transition">About us</a>
+          </button>
         </div>
-        
-        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition"><a href="investors.html">For Investors</a></a>
-        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition"><a href="plans.html">Pricing</a></a>
-        <a href="#" class="text-[18px] font-normal text-[#FCBA05] transition"><a href="about.html">About us</a></a>
-        <a href="#" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition"><a href="contact.html">Contact Us</a></a>
+        <a href="contact.html" class="text-[18px] font-normal text-[#090C10] hover:text-[#FCBA05] transition">Contact Us</a>
         
         <button class="px-6 py-3 rounded-full bg-[#FCBA05] text-white text-sm font-medium hover:bg-[#e0a800] transition">
             Sign In / Sign Up
         </button>
     </nav>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobileMenuButton" class="lg:hidden p-2 focus:outline-none">
+        <svg class="w-8 h-8 text-[#090C10]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+    </button>
   </header>
 
-  <div>
-    <div class="fixed top-0 right-0 z-50 p-4 md:hidden">
-        <button id="mobileMenuButton" class="text-white focus:outline-none">
-            <svg class="w-8 h-8 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-        </button>
-    </div>
-    <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-full bg-[#064635] z-40 pt-16">
-        <ul class="flex flex-col items-center py-4">
-            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="businesses.html">For Businesses</a></li>
-            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="investors.html">For Investors</a></li>
-            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="plans.html">Pricing</a></li>
-            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="about.html">About us</a></li>
-            <li class="font-semi-bold py-3 px-4 w-full text-center border-b border-[#FCBA05]/20"><a href="contact.html">Contact Us</a></li>
+  <!-- Mobile Menu -->
+  <div id="mobileMenu" class="mobile-menu fixed inset-0 bg-white z-40 pt-20 px-6 hidden">
+      <ul class="flex flex-col space-y-4">
+          <li><a href="index.html" class="block py-3 text-xl font-medium text-[#090C10] border-b border-gray-100">Home</a></li>
+          <li><a href="businesses.html" class="block py-3 text-xl font-medium text-[#090C10] border-b border-gray-100">For Businesses</a></li>
+          <li><a href="investors.html" class="block py-3 text-xl font-medium text-[#090C10] border-b border-gray-100">For Investors</a></li>
+          <li><a href="plans.html" class="block py-3 text-xl font-medium text-[#090C10] border-b border-gray-100">Pricing</a></li>
+          <li><a href="about.html" class="block py-3 text-xl font-medium text-[#FCBA05] border-b border-gray-100">About us</a></li>
+          <li><a href="contact.html" class="block py-3 text-xl font-medium text-[#090C10] border-b border-gray-100">Contact Us</a></li>
+          <li class="pt-4">
+              <button class="w-full py-4 rounded-full bg-[#FCBA05] text-white text-lg font-medium">
+                  Sign In / Sign Up
+              </button>
+          </li>
+      </ul>
+  </div>
 
-            <li class="py-3 px-4 w-full text-center">
-                <button type="button" class="rounded-full px-6 py-2 bg-[#FCBA05] font-semi-bold w-3/4 mx-auto">Sign In/Signup</button>
-            </li>
-        </ul>
-    </div>
-</div>
+
+
+
+
+
+
+
+
+
+
 
   <section class="bg-[#F4F8F7]">
     <div class="w-full px-4 lg:px-24 py-12 lg:py-28 overflow-hidden flex flex-col justify-center items-start gap-6 lg:gap-10">

@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const mobileMenuButton = document.getElementById('mobileMenuButton');
-    const mobileMenu = document.getElementById('mobileMenu');
-    mobileMenuButton.addEventListener('click', function() { mobileMenu.classList.toggle('open'); });
-    document.querySelectorAll('#mobileMenu li').forEach(item => { item.addEventListener('click', function() { mobileMenu.classList.remove('open'); }); });
+    // const mobileMenuButton = document.getElementById('mobileMenuButton');
+    // const mobileMenu = document.getElementById('mobileMenu');
+    // mobileMenuButton.addEventListener('click', function() { mobileMenu.classList.toggle('open'); });
+    // document.querySelectorAll('#mobileMenu li').forEach(item => { item.addEventListener('click', function() { mobileMenu.classList.remove('open'); }); });
     
     const scrollSections = document.querySelectorAll('.scroll-section');
     const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } }); }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
@@ -12,5 +12,23 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuButton = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    
+    mobileMenuButton.addEventListener('click', function() {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('open');
+    });
+    
+    // Close menu when clicking on a link
+    const menuLinks = mobileMenu.querySelectorAll('a');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mobileMenu.classList.add('hidden');
+            mobileMenu.classList.remove('open');
+        });
+    });
+});
 
 
