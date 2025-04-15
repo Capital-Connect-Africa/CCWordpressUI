@@ -258,3 +258,13 @@ button:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(0,0,0,0
             height: 100%;
         }
     }
+
+
+    /* Navbar */
+    .mobile-menu {
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+    }
+    .mobile-menu.open {
+        transform: translateX(0);
+    }
